@@ -1,0 +1,12 @@
+.formWrapperContainer .formWrapperWebsite {
+    background: #fff;
+    width: 35%;
+    max-width: 430px;
+    height: 100%;
+    overflow-y: scroll;
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
+    transition: all .25s cubic-bezier(.62,.35,.05,.25);
+    box-shadow: -5px 0 74px rgba(0,0,0,.8);
+}

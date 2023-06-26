@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'licious-clone';
+  showDrawer:boolean | any;
+  constructor(private router:Router){
+    this.router.navigate(['./products'])
+  }
+
+  onLogIn(){
+    console.log('onLogIn');
+    this.showDrawer=true;
+    setTimeout(()=>{
+this.showDrawer=false;
+    },500)
+  }
 }

@@ -1,0 +1,35 @@
+.homePageContainer {
+    background: #fff;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.widget_container:first-of-type {
+    margin-top: 1.75rem;
+}
+.widget_container {
+    line-height: 0;
+    margin: 32px 0;
+}
+.widget_largeCard {
+    border-radius: 12px;
+}
+.widget_largeCard {
+    display: block;
+    background-color: #fff;
+    overflow: hidden;
+    aspect-ratio: 16/7;
+}
+.widget_largeCard img {
+    height: 100%;
+    width: 100%;
+}
+// .widget_container {
+//     line-height: 0;
+//     margin: 32px 0;
+// }
+@media screen and (min-width: 768px){
+.widget_largeCard {
+    aspect-ratio: 9/2;
+    min-width: 100%;
+}
+}
