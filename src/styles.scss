@@ -1,4 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    // font-family: 'Lato Regular', sans-serif;
+    margin: 0;
+    // padding: 0;
+    // border: 0;
+    // line-height: 1.5;
+    // word-wrap: break-word;
+    // text-size-adjust: auto;
+    // -webkit-text-size-adjust: auto;
+}
+*,:after,:before {
+    box-sizing: border-box;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.004)
+}
+* {
+    font-family: Lato Regular;
+}
+.text_red {
+    color: var(--theme-color)
+}
+
+.text_green {
+    color: #417505
+}
+.green_text {
+    color: #26955d
+}
+
+.red_text {
+    color: #d11243
+}
+
+.white_text {
+    color: #fff
+}
+
+.black_text {
+    color: #0d0d0e
+}
+
+.grey_text {
+    color: #808387
+}
+
+.orange_text {
+    color: #d47015
+}
 // .drawer {
 //     height: 80%;
 //     width: 0;

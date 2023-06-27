@@ -118,41 +118,11 @@
     line-height: 16.8px
 }
 
-.text_red {
-    color: var(--theme-color)
-}
-
-.text_green {
-    color: #417505
-}
-
 .strike_text {
     text-decoration: line-through
 }
 
-.green_text {
-    color: #26955d
-}
 
-.red_text {
-    color: #d11243
-}
-
-.white_text {
-    color: #fff
-}
-
-.black_text {
-    color: #0d0d0e
-}
-
-.grey_text {
-    color: #808387
-}
-
-.orange_text {
-    color: #d47015
-}
 
 @keyframes staticPopup {
     0% {
@@ -253,16 +223,7 @@
     font-display: swap
 }
 
-body {
-    margin: 0
-}
 
-*,:after,:before {
-    box-sizing: border-box;
-    outline: none;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.004)
-}
 
 ul {
     list-style: none;
@@ -297,9 +258,7 @@ li.slick-active {
     cursor: default!important
 }
 
-* {
-    font-family: Lato Regular
-}
+
 
 ol {
     margin: 0;
@@ -1270,7 +1229,7 @@ input[type=number] {
     }
 
     .LocationPopup_popup_container___6tXZ .LocationPopup_popup_wrapper__YDukU .LocationPopup_search_bar_container__jElBR .LocationPopup_search_bar__cLWrF:before {
-        content: url(/image/search_venus_icon.svg);
+        content: url(https://www.licious.in/image/search_venus_icon.svg);
         position: absolute;
         left: 0;
         top: -7px
@@ -1449,7 +1408,7 @@ input[type=number] {
     }
 
     .LocationPopup_popup_container___6tXZ .LocationPopup_popup_wrapper__YDukU .LocationPopup_search_bar_container__jElBR .LocationPopup_search_bar__cLWrF:before {
-        content: url(/image/search_venus_icon.svg);
+        content: url(https://www.licious.in/image/search_venus_icon.svg);
         position: absolute;
         left: 15px
     }
@@ -1548,47 +1507,47 @@ input[type=number] {
     }
 }
 
-.LocationHeader_location_container__cGaW7 {
+.location_container {
     display: flex;
     max-width: 200px;
     cursor: pointer
 }
 
-.LocationHeader_location_container__cGaW7.LocationHeader_normal_cursor__ot_kr {
+.location_container.LocationHeader_normal_cursor__ot_kr {
     cursor: default
 }
 
-.LocationHeader_location_container__cGaW7 .LocationHeader_location_pin__cQWlr {
+.location_container .location_pin_label {
     margin: 4px 6px 0 0
 }
 
-.LocationHeader_location_container__cGaW7 .LocationHeader_align_right__celTN {
+.location_container .locationNameContainer {
     max-width: 180px
 }
 
-.LocationHeader_location_container__cGaW7 .LocationHeader_align_right__celTN .LocationHeader_top_part__RmYRb {
+.location_container .locationNameContainer .locationName_top_part {
     position: relative;
     display: inline-flex;
     align-items: center
 }
 
-.LocationHeader_location_container__cGaW7 .LocationHeader_align_right__celTN .LocationHeader_top_part__RmYRb .LocationHeader_city_name__0vmFz {
+.location_container .locationNameContainer .locationName_top_part .city_name {
     margin-right: 8px
 }
 
-.LocationHeader_location_container__cGaW7 .LocationHeader_align_right__celTN .LocationHeader_locality__ek6T2 {
+.location_container .locationNameContainer .locality_name {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
-.LocationHeader_location_container__cGaW7 .LocationHeader_align_right__celTN .LocationHeader_locality__ek6T2.LocationHeader_detecting__Gu_m_ {
+.location_container .locationNameContainer .locality_name.location_detecting {
     font-style: italic
 }
 
 @media screen and (max-width: 800px) {
-    .LocationHeader_location_container__cGaW7 {
+    .location_container {
         margin:20px 20px 20px 6px
     }
 }
@@ -1771,11 +1730,11 @@ input[type=number] {
     }
 }
 
-.CategoryDropdown_category_container__FWbDR {
+.category_container {
     position: relative
 }
 
-.CategoryDropdown_category_container__FWbDR .CategoryDropdown_categories_button__jXHfF {
+.category_container .categories_button {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1783,18 +1742,18 @@ input[type=number] {
     color: #000
 }
 
-.CategoryDropdown_category_container__FWbDR .CategoryDropdown_categories_button__jXHfF .CategoryDropdown_label_selected__9OxBF {
+.category_container .categories_button .CategoryDropdown_label_selected__9OxBF {
     color: var(--theme-color)
 }
 
-.CategoryDropdown_category_container__FWbDR .CategoryDropdown_categories_button__jXHfF .CategoryDropdown_namingGap__xwDBH {
+.category_container .categories_button .CategoryDropdown_namingGap__xwDBH {
     font-weight: 500;
     font-size: 14px;
     line-height: 19px
 }
 
 @media(max-width: 768px) {
-    .CategoryDropdown_category_container__FWbDR {
+    .category_container {
         display:none
     }
 }
@@ -2506,7 +2465,7 @@ input[type=number] {
     }
 }
 
-.MaterializeToast_materialize_toast__sn78h {
+.materialize_toast {
     visibility: hidden;
     background-color: #333;
     color: #fff;
@@ -2522,12 +2481,12 @@ input[type=number] {
     right: 15%
 }
 
-.MaterializeToast_materialize_toast__sn78h.MaterializeToast_show__Qdzwr {
+.materialize_toast.MaterializeToast_show__Qdzwr {
     visibility: visible;
     animation: MaterializeToast_toast-fadein__Pn7g3 .5s,MaterializeToast_toast-fadeout__WwW2G .5s 2.5s
 }
 
-.MaterializeToast_materialize_toast__sn78h.MaterializeToast_with_tooltip__hSjVp:before {
+.materialize_toast.materializeToast_with_tooltip:before {
     content: "";
     position: absolute;
     border: 10px solid transparent;
@@ -2585,7 +2544,7 @@ input[type=number] {
     }
 }
 
-.Checkout_checkout_button__lJ_lo,.Checkout_non_empty_cart__zCVW1 {
+.checkout_button,.Checkout_non_empty_cart__zCVW1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2595,24 +2554,24 @@ input[type=number] {
     transform: translateY(-2px)
 }
 
-.Checkout_checkout_button__lJ_lo .Checkout_cart_details__ofa3_,.Checkout_checkout_button__lJ_lo .Checkout_columnStyle__bQXTK,.Checkout_checkout_button__lJ_lo .Checkout_rowStyle__BbFEW,.Checkout_non_empty_cart__zCVW1 .Checkout_cart_details__ofa3_,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK,.Checkout_non_empty_cart__zCVW1 .Checkout_rowStyle__BbFEW {
+.checkout_button .checkout_cart_details,.checkout_button .Checkout_columnStyle__bQXTK,.checkout_button .checkout_rowStyle,.Checkout_non_empty_cart__zCVW1 .checkout_cart_details,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK,.Checkout_non_empty_cart__zCVW1 .checkout_rowStyle {
     height: 35px;
     min-width: 50px
 }
 
-.Checkout_checkout_button__lJ_lo .Checkout_cart_details__ofa3_ .Checkout_cart_value__hi3ee,.Checkout_checkout_button__lJ_lo .Checkout_columnStyle__bQXTK .Checkout_cart_value__hi3ee,.Checkout_checkout_button__lJ_lo .Checkout_rowStyle__BbFEW .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .Checkout_cart_details__ofa3_ .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .Checkout_rowStyle__BbFEW .Checkout_cart_value__hi3ee {
+.checkout_button .checkout_cart_details .Checkout_cart_value__hi3ee,.checkout_button .Checkout_columnStyle__bQXTK .Checkout_cart_value__hi3ee,.checkout_button .checkout_rowStyle .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .checkout_cart_details .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .checkout_rowStyle .Checkout_cart_value__hi3ee {
     color: var(--theme-color);
     width: -moz-max-content;
     width: max-content
 }
 
-.Checkout_checkout_button__lJ_lo .Checkout_columnStyle__bQXTK,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK {
+.checkout_button .Checkout_columnStyle__bQXTK,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK {
     display: flex;
     flex-direction: column;
     height: 100%
 }
 
-.Checkout_checkout_button__lJ_lo .Checkout_rowStyle__BbFEW,.Checkout_non_empty_cart__zCVW1 .Checkout_rowStyle__BbFEW {
+.checkout_button .checkout_rowStyle,.Checkout_non_empty_cart__zCVW1 .checkout_rowStyle {
     display: flex;
     flex-direction: row;
     height: 100%
@@ -2627,7 +2586,7 @@ input[type=number] {
 }
 
 @media(max-width: 768px) {
-    .Checkout_checkout_button__lJ_lo,.Checkout_non_empty_cart__zCVW1 {
+    .checkout_button,.Checkout_non_empty_cart__zCVW1 {
         display:none
     }
 }
@@ -2973,7 +2932,7 @@ input[type=number] {
     width: 100%;
     bottom: 0;
     left: 0;
-    background: #fff url(/image/meatopia_background.png);
+    background: #fff url(https://www.licious.in/image/meatopia_background.png);
     background-size: 150%
 }
 
@@ -3082,7 +3041,7 @@ input[type=number] {
     }
 }
 
-.Loader_loaderContainer___z_zR {
+.loaderContainer {
     position: relative;
     width: 100%
 }
@@ -3134,7 +3093,7 @@ input[type=number] {
     animation: Loader_loader__rEtzA 2s linear infinite
 }
 
-.Loader_loaderOff__kBChb {
+.loaderOff {
     display: none
 }
 
@@ -3142,7 +3101,7 @@ input[type=number] {
     overflow: hidden
 }
 
-.Loader_showChildren__P39Nk {
+.showChildrenProfile {
     overflow: visible
 }
 
@@ -3166,29 +3125,29 @@ input[type=number] {
     }
 }
 
-.ProfileDropdown_profile_container__Zyzjz {
+.profile_container {
     position: relative
 }
 
-.ProfileDropdown_profile_container__Zyzjz .ProfileDropdown_profile_button__33Gw9 {
+.profile_container .profile_button {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     cursor: pointer
 }
 
-.ProfileDropdown_profile_container__Zyzjz .ProfileDropdown_profile_button__33Gw9 .ProfileDropdown_user_label_selected__6DCm4 {
+.profile_container .profile_button .ProfileDropdown_user_label_selected__6DCm4 {
     color: var(--theme-color)
 }
 
-.ProfileDropdown_profile_container__Zyzjz .ProfileDropdown_profile_button__33Gw9 .ProfileDropdown_namingGap__IFKny {
+.profile_container .profile_button .namingGap {
     font-weight: 500;
     font-size: 14px;
     line-height: 19px
 }
 
 @media(max-width: 768px) {
-    .ProfileDropdown_profile_container__Zyzjz {
+    .profile_container {
         display:none
     }
 }
@@ -3213,7 +3172,7 @@ input[type=number] {
     }
 }
 
-.SearchBar_searchbar_container__fxyji {
+.searchbar_container {
     position: relative;
     width: 320px;
     display: flex;
@@ -3221,8 +3180,8 @@ input[type=number] {
     align-items: center
 }
 
-.SearchBar_searchbar_container__fxyji:after {
-    content: url(/image/search_venus_icon.svg);
+.searchbar_container:after {
+    content: url(https://www.licious.in/image/search_venus_icon.svg);
     position: absolute;
     right: 12px;
     top: 1px;
@@ -3231,7 +3190,7 @@ input[type=number] {
     z-index: 1
 }
 
-.SearchBar_searchbar_container__fxyji input.SearchBar_searchbar__n1nRT {
+.searchbar_container input.searchbar {
     height: 32px;
     border: 1px solid #e7e7e7;
     border-radius: 6px;
@@ -3244,11 +3203,11 @@ input[type=number] {
     cursor: pointer
 }
 
-.SearchBar_searchbar_container__fxyji input.SearchBar_searchbar__n1nRT:hover {
+.searchbar_container input.searchbar:hover {
     border: 1px solid #969799
 }
 
-.SearchBar_searchbar_container__fxyji .SearchBar_search_label__1pPwi {
+.searchbar_container .search_label {
     position: absolute;
     left: 12px;
     top: 3px;
@@ -3260,23 +3219,23 @@ input[type=number] {
 }
 
 @media(max-width: 768px) {
-    .SearchBar_searchbar_container__fxyji {
+    .searchbar_container {
         display:none
     }
 }
 
 @media(min-width: 768px)and (max-width:975px) {
-    .SearchBar_searchbar_container__fxyji {
+    .searchbar_container {
         width:18%
     }
 
-    .SearchBar_searchbar_container__fxyji:before {
+    .searchbar_container:before {
         left: 0;
         right: 0;
         margin: auto
     }
 
-    .SearchBar_searchbar_container__fxyji .SearchBar_search_label__1pPwi {
+    .searchbar_container .search_label {
         display: none
     }
 }
@@ -3666,7 +3625,7 @@ input[type=number] {
     box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
     margin: 5px;
     background-color: #ffdc93;
-    background-image: url(/image/rebranding/png/meatopia_non_member_background.png);
+    background-image: url(https://www.licious.in/image/rebranding/png/meatopia_non_member_background.png);
     background-repeat: round
 }
 
@@ -4569,7 +4528,7 @@ input[type=number] {
 .LoyaltyBanner_non_member_banner__fpTk_ {
     margin: 25px 16px 16px;
     border-radius: 10px;
-    background-image: url(/image/meatopia_non_member_background.png);
+    background-image: url(https://www.licious.in/image/meatopia_non_member_background.png);
     background-size: 50%;
     background-color: #ffdc93;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.2)
@@ -4718,7 +4677,7 @@ input[type=number] {
     box-shadow: 0 4px 10px 0 hsla(0,0%,72%,.5);
     border: 1px solid #9b9b9b;
     background-color: #ffdc93;
-    background-image: url(/image/rebranding/png/meatopia_non_member_background.png);
+    background-image: url(https://www.licious.in/image/rebranding/png/meatopia_non_member_background.png);
     background-repeat: round
 }
 
@@ -5285,8 +5244,8 @@ input[type=number] {
         opacity: .2
     }
 }
-
-.PageHeader_top_navigation_section__UBRcs {
+// navigation css start
+.top_navigation_section {
     width: 100%;
     border-bottom: 1px solid #eee;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
@@ -5295,7 +5254,7 @@ input[type=number] {
     z-index: 1
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_header_container__Aj05D {
+.top_navigation_section .header_container {
     display: flex;
     align-items: center;
     padding: 14px 0;
@@ -5309,18 +5268,18 @@ input[type=number] {
     justify-content: space-between
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_header_container__Aj05D .PageHeader_licious_logo__xn_fQ {
+.top_navigation_section .header_container .licious_logo {
     cursor: pointer
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_header_container__Aj05D .PageHeader_thirdSection__52tXv {
+.top_navigation_section .header_container .thirdSection {
     display: grid;
     grid-template-columns: max-content max-content max-content;
     align-items: center;
     gap: 40px
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_header_container__Aj05D .PageHeader_help_btn__UcTMf {
+.top_navigation_section .header_container .PageHeader_help_btn__UcTMf {
     width: 100px;
     height: 30px;
     border-radius: 4px;
@@ -5332,26 +5291,26 @@ input[type=number] {
 }
 
 @media screen and (max-width: 900px) {
-    .PageHeader_top_navigation_section__UBRcs .PageHeader_header_container__Aj05D {
+    .top_navigation_section .header_container {
         padding-left:20px;
         padding-right: 20px
     }
 }
 
 @media screen and (max-width: 800px) {
-    .PageHeader_top_navigation_section__UBRcs .PageHeader_header_container__Aj05D {
+    .top_navigation_section .header_container {
         height:50px
     }
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_location_container__fwZLH {
+.top_navigation_section .PageHeader_location_container__fwZLH {
     display: flex;
     margin-left: 2%;
     margin-right: 3%;
     cursor: pointer
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_dropLocation__WoAFf {
+.top_navigation_section .PageHeader_dropLocation__WoAFf {
     width: 28px;
     height: 26px;
     margin-top: 2px;
@@ -5360,7 +5319,7 @@ input[type=number] {
     object-fit: contain
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_location__ynIHL {
+.top_navigation_section .PageHeader_location__ynIHL {
     color: #4a4a4a;
     display: flex;
     flex-direction: column;
@@ -5369,7 +5328,7 @@ input[type=number] {
     position: relative
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_addressCity__DvpA3 {
+.top_navigation_section .PageHeader_addressCity__DvpA3 {
     font-size: 10px;
     font-weight: 400;
     text-transform: uppercase;
@@ -5379,7 +5338,7 @@ input[type=number] {
     text-overflow: ellipsis
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_addressArea__yXYsK {
+.top_navigation_section .PageHeader_addressArea__yXYsK {
     font-size: 12px;
     font-weight: 700;
     max-width: 18ch;
@@ -5388,7 +5347,7 @@ input[type=number] {
     text-overflow: ellipsis
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw {
+.top_navigation_section .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw {
     font-size: 13px;
     font-weight: 400;
     font-stretch: normal;
@@ -5401,7 +5360,7 @@ input[type=number] {
     top: 10%
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw .PageHeader_inline_loader__IkR4V {
+.top_navigation_section .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw .PageHeader_inline_loader__IkR4V {
     width: 15%;
     vertical-align: middle;
     position: relative;
@@ -5410,11 +5369,11 @@ input[type=number] {
     margin-left: 3%
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw .PageHeader_inline_loader__IkR4V img {
+.top_navigation_section .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw .PageHeader_inline_loader__IkR4V img {
     width: 100%
 }
 
-.PageHeader_top_navigation_section__UBRcs .PageHeader_dropdownArrow__j7uy8 {
+.top_navigation_section .PageHeader_dropdownArrow__j7uy8 {
     width: 13.2px;
     position: absolute;
     height: 9px;
@@ -5423,15 +5382,16 @@ input[type=number] {
 }
 
 @media(max-width: 769px) {
-    .PageHeader_licious_logo__xn_fQ,.PageHeader_top_navigation_section__UBRcs[data-page=listingpage],.PageHeader_top_navigation_section__UBRcs[data-page=productpage] {
+    .licious_logo,.top_navigation_section[data-page=listingpage],.top_navigation_section[data-page=productpage] {
         display:none
     }
 
-    .PageHeader_top_navigation_section__UBRcs>.PageHeader_header_container__Aj05D {
+    .top_navigation_section>.header_container {
         padding: 10px;
         cursor: pointer
     }
 }
+//navigation css end
 
 @keyframes CheckoutFooter_staticPopup__SX7wh {
     0% {
@@ -5509,7 +5469,7 @@ input[type=number] {
     }
 }
 
-.navigationContainer_navigationContainer__L_hUU {
+.navigationContainer {
     z-index: 100;
     position: sticky;
     top: 0;
