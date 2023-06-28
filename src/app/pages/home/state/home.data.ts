@@ -1,0 +1,19 @@
+export const categories = [{ id: 1, name: "Checken", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/d654ce6f-3b1a-efb1-ce66-64b3a4afb655/original/Chicken_(1)_(1).png"},
+{ id: 2, name: "Fish & Seafood", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/52ed9676-ec28-711e-dd8a-55d4ea17c324/original/Fish_(1)_(1)_(1).png"},
+{ id: 3, name: "Mutton", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/2119874c-38a6-df8c-22f1-5cd8a2eb4d80/original/Mutton_(1)_(1).png" },
+{ id: 4, name: "Ready to Cook", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/cbcb49fd-0d91-0eaf-a23a-d78202b5c9db/original/All-Cat-Icon-Images_(1).png" },
+{ id: 5, name: "Prawns", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/82b8b842-3d62-955f-6076-c57ca8fdb4c5/original/Prawns.png" },
+{ id: 6, name: "Egg", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/544bddc9-5775-cd44-511c-8e7e78f75a10/original/Eggs.png" },
+{ id: 7, name: "Coll Cuts", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/2ecb2ebd-114c-7a9b-25eb-ece9dec68d2c/original/Coldcuts.png" },
+{ id: 8, name: "Kebab and Biryani", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c36cb4a6-1751-bcff-81e6-1e2b5a0d0520/original/Kebabs_(1).png" },
+{ id: 9, name: "Spreads", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/94f02fac-266b-f1e6-b6af-4ba19dade1c9/original/spreads-transparent_(5).png" },
+{ id: 10, name: "Plant Based Meat", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/da303776-1989-e6a8-2113-74cf19d314d8/original/Uncrave.png" },
+{ id: 11, name: "Meat Masala", avatar:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/4ad0a144-8830-a4b5-90ee-216753328bbd/original/Masala_1.png" }];
+
+export const bestSellers=[{id:1, name:"Checken Curry Cut - Small Pieces", weight:"500",pieces:null, price:179, discountPer:7, discountPrice:166, deliverIn:"90", avatar:"https://www.licious.in/_next/image?url=https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/0d6cb916-dcc3-5634-dc77-5850211c7096/original/chicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg?format=webp&w=1920&q=75"},
+    {id:2, name:"Checken Beast - Boneless", weight:"450", pieces:null, price:285, discountPer:null, discountPrice:null, deliverIn:"90", avatar:"https://www.licious.in/_next/image?url=https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/c0a07db3-763d-a743-5ad2-ce6408b7cc4b/original/chicken_Relevance_PDP_Chicken_Breast_470_X_320_PDP_(1).jpg?format=webp&w=1920&q=75"},
+    {id:3, name:"Classic (Farm Fresh) Eggs - Pack of 12", weight:null, pieces:"12", price:170, discountPer:14, discountPrice:146, deliverIn:"90", avatar:"https://www.licious.in/_next/image?url=https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/0a6cc926-9ccf-3cf2-c9a4-2a3ffbceeccb/original/PDP_2._Classic_Eggs_-_Pack_of_12.jpg?format=webp&w=1920&q=75"},
+    {id:4, name:"Rohu (Rui/Kannadi Kendai) Medium - Bengali Cut, No", weight:"500", pieces:null, price:269, discountPer:null, discountPrice:null, deliverIn:"90", avatar:"https://www.licious.in/_next/image?url=https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/feedc98d-42e1-0e0a-7da0-0072fa84977c/original/p2_tile_images_6th_folder-09_(1).jpg?format=webp&w=1920&q=75"},
+    {id:5, name:"Afghani Murgh Seekh K", weight:null, pieces:4, price:269, discountPer:null, discountPrice:null, deliverIn:"90", avatar:"https://www.licious.in/_next/image?url=https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/018d4866-6252-8f4d-84c7-dee09b295691/original/UCOOKED_(1).jpg?format=webp&w=1920&q=75"},
+    {id:6, name:"Dev Test", weight:"500", pieces:null, price:"179", discountPer:"7", discountPrice:"166", deliverIn:"90", avatar:""},
+    ]

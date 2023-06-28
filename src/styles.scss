@@ -48,19 +48,122 @@ body {
 .orange_text {
     color: #d47015
 }
-// .drawer {
-//     height: 80%;
-//     width: 0;
-//     z-index: 1;
-//     right: 0;
-//     background-color: #1B1C1C;
-//     border-radius: 50px 0px 0px 50px;
-//     overflow-x: hidden;
-//     transition: 0.5s;
-//     //padding-top: 60px;
-//     position: fixed;
-//     margin: auto
-//   }
+
+.title_1 {
+    font-size: 28px
+}
+
+.title_1,.title_2 {
+    font-family: Lato Bold;
+    color: #0d0d0e;
+    line-height: 128%
+}
+
+.title_2 {
+    font-size: 20px
+}
+
+.title_3 {
+    font-size: 18px;
+    line-height: 18.9px
+}
+
+.title_3,.title_4 {
+    font-family: Lato Bold;
+    color: #0d0d0e
+}
+
+.title_4 {
+    font-size: 16px;
+    line-height: 22.4px
+}
+
+.title_5 {
+    font-family: Lato Regular;
+    font-size: 16px;
+    color: #0d0d0e
+}
+
+.title_6 {
+    font-family: Lato Bold
+}
+
+.title_6,.title_7 {
+    font-size: 14px;
+    color: #0d0d0e;
+    line-height: 18.9px
+}
+
+.title_7 {
+    font-family: Lato Regular
+}
+
+.title_8 {
+    font-family: Lato Bold
+}
+
+.title_8,.title_9 {
+    font-size: 14px;
+    color: #0d0d0e;
+    line-height: 19px
+}
+
+.title_9 {
+    font-family: Lato Regular;
+    font-weight: 500
+}
+
+.text_1 {
+    font-size: 14px;
+    line-height: 140%
+}
+
+.text_1,.text_2 {
+    font-family: Lato Regular;
+    color: #4d4d4f
+}
+
+.text_2 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.8px
+}
+
+.strike_text {
+    text-decoration: line-through
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+ul li {
+    display: inline-block
+}
+
+a {
+    text-decoration: none
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    margin: 0
+}
+.drawer {
+    height: 80%;
+    width: 0;
+    z-index: 1;
+    right: 0;
+    background-color: #df9b0a;
+    border-radius: 50px 0px 0px 50px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    //padding-top: 60px;
+    position: fixed;
+    margin: auto
+  }
 
 // .FormWrapper_form_wrapper__DEx_r .FormWrapper_lock_screen_web__hFWfx {
     .drawer .backdrop {

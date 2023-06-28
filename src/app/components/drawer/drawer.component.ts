@@ -21,6 +21,7 @@ export class DrawerComponent implements OnChanges,OnInit {
   ngOnInit(): void {
   }
   openDrawer() {
+    console.log('--------openDrawer--------');
     let screenWith = innerWidth;
     console.log(screenWith);
     let formWidth = 350;
@@ -42,7 +43,8 @@ export class DrawerComponent implements OnChanges,OnInit {
   closeDrawer() {
     const style = this.drawerElement.nativeElement.style;
     style.width = '0'
-    console.log('Bye..');
+    console.log('..Close Drawer..');
+    
     // if (this.isFormShown) {
     //   this.isFormShown = false;
     //   this.closeDrawerEvt.emit();

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { DrawerComponent } from './components/drawer/drawer.component';
+import { CategoryHolderComponent } from './components/category-holder/category-holder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CartComponent,
-    DrawerComponent
+    DrawerComponent,
+    CategoryHolderComponent
   ],
   imports: [
     BrowserModule,

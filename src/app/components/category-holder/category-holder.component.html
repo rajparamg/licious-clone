@@ -1,0 +1,91 @@
+<div class="WidgetContainer_widget_container__L_SK_" data-layouttype="fullwidth">
+    <ng-container *ngIf="categories  && categories.length !==0">
+    <header>
+        <h1 class="title_2">Shop by categories</h1>
+        <h2 class="text_1">Freshest meats and much more!</h2>
+    </header>
+    <article data-testid="category_grid" id="category_grid" class="CategoriesGrid_grid_container__soeRq"><a
+            data-testid="category_grid0" class="CategoriesGrid_cat_item__xccPQ" href="/delicious-deals">
+            <div data-testid="category_grid0-img-container" class="CategoriesGrid_img_container__OlEJk"><img
+                    data-testid="category_grid0-img"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/111d6147-b116-f51c-bd9d-dddfd923ba97/original/Todays_Deal_1.png"
+                    alt="Today's Deals"></div>
+            <div data-testid="category_grid0-mob_subtitle" class="CategoriesGrid_category_name_mobile__aauoP title_7">
+                Today's Deals</div>
+            <div data-testid="category_grid0-web_subtitle" class="CategoriesGrid_category_name_desktop__NeUck title_5">
+                Today's Deals</div>
+        </a>
+        <a *ngFor="let d of categories; let i=index;" class="CategoriesGrid_cat_item__xccPQ" href="/chicken">
+            <div data-testid="category_grid1-img-container" class="CategoriesGrid_img_container__OlEJk"><img
+                    data-testid="category_grid1-img" [src]="d.avatar" [alt]="d.name"></div>
+            <div data-testid="category_grid1-mob_subtitle" class="CategoriesGrid_category_name_mobile__aauoP title_7">
+                {{d.name}}</div>
+            <div data-testid="category_grid1-web_subtitle" class="CategoriesGrid_category_name_desktop__NeUck title_5">
+                {{d.name}}</div>
+        </a>
+
+
+    </article>
+</ng-container>
+
+    <ng-container *ngIf="bestSellers && bestSellers.length !==0">
+        <header>
+            <h1 class="title_2">Bestsellers</h1>
+            <h2 class="text_1">Most popular products near you!</h2>
+        </header>
+        <div class="Carousel_carousel_container__T6gc5">
+            <section class="Carousel_normal_slider__w6zPU">
+                <div class="Carousel_spacer__0hRzh"></div>
+                <article *ngFor="let d of bestSellers; let i=index;" class="WidgetCard_product1__cX0W8">
+                    <article id="Bestsellers_pr_5785b9065d7e1">
+                        <div class="SmallProductCard_image_wrapper__zLcrP"><span
+                                style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                    data-testid="undefined-img-web" placeholderimage="https://www.licious.in/image/product_place_holder.jpeg"
+                                    [alt]="d.name"
+                                    [src]="d.avatar"
+                                    decoding="async" data-nimg="fill" class="SmallProductCard_smallProductImage__7htJF"
+                                    sizes="100vw"
+                                    srcset="https://www.licious.in/_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=640&amp;q=75 640w, https://www.licious.in/_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=750&amp;q=75 750w, https://www.licious.in/_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=828&amp;q=75 828w, https://www.licious.in/_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=1080&amp;q=75 1080w, https://www.licious.in/_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=1200&amp;q=75 1200w, https://www.licious.in/_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=1920&amp;q=75 1920w, https://www.licious.in/_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fdao54xqhg9jfa.cloudfront.net%2FOMS-ProductMerchantdising%2F0d6cb916-dcc3-5634-dc77-5850211c7096%2Foriginal%2Fchicken_Relevance_PDP_Chicken_Curry_Cut_Small)_470_X_320_PDP_(1).jpg%3Fformat%3Dwebp&amp;w=3840&amp;q=75 3840w"
+                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"></span>
+                            <div class="SmallProductCard_single_box__WAM3L"><button
+                                    class="SmallProductCard_increase_button__Z6tkc home-add-to-cart add-to-cart"><img
+                                        src="https://www.licious.in/image/rebranding/svg/Plus.svg" width="12" height="12" loading="lazy"></button>
+                            </div>
+                        </div>
+                        <div class="SmallProductCard_text_wrapper__pcibR"><span
+                                class="SmallProductCard_title__ezUx4 title_4">{{d.name}}</span><span
+                                data-testid="undefined-display-net-wt"
+                                class="SmallProductCard_sub_title__cbOP3 text_2" *ngIf="d.weight">{{d.weight}} gms</span>
+                                <span data-testid="undefined-display-pieces"
+                                class="SmallProductCard_sub_title__cbOP3 text_2" *ngIf="d.pieces">{{d.pieces}} Pieces</span>
+                                <div class="SmallProductCard_price_wrapper__fR0cD"><span class="title_4"
+                                    data-testid="undefined-base-discount" *ngIf="d.discountPrice && d.price">₹{{d.discountPrice}}</span>
+                                    <span class="title_4"
+                                    data-testid="undefined-base-discount" *ngIf="!d.discountPrice && d.price">₹{{d.price}}</span>&nbsp;<span
+                                    data-testid="undefined-base-price-field"
+                                    class="SmallProductCard_cut_price__1JIw_ text_1" *ngIf="d.price && d.discountPrice">₹{{d.price}}</span><span
+                                    data-testid="undefined-discount-field" class="SmallProductCard_offer__G0mv9 title_7" *ngIf="d.discountPer">{{d.discountPer}}%
+                                    off</span></div>
+                            <div class="SmallProductCard_delivery_wrapper__5doc8"><img
+                                    data-testid="undefined-delivery-type-img" src="https://www.licious.in/image/rebranding/svg/express-del.svg"
+                                    width="12" height="12" loading="lazy"><span data-testid="undefined-pr-next-availability"
+                                    class="text_2">Today in <b>{{d.deliverIn}} min</b></span></div>
+                        </div>
+                    </article>
+                </article>
+                <article data-testid="widget_card" class="WidgetCard_product1__cX0W8">
+                    <article data-testid="view_all" class="ViewAllCard_view_all_card__WLRdQ title_4" (click)="onViewAll()">View All</article>
+                </article>
+                <div class="Carousel_spacer__0hRzh"></div>
+            </section>
+            <article class="Carousel_right_arrow__EpitW"><img src="https://www.licious.in/image/carousel_arrow.svg" alt="right" width="8"
+                    height="16" role="svg"></article>
+            <article class="Carousel_left_arrow__CIjaR"><img src="https://www.licious.in/image/carousel_arrow.svg" alt="left" width="8" height="16" role="svg"></article>
+        </div>
+    </ng-container>
+</div>
+
+
+
+<!-- <div data-testid="widget_container" class="WidgetContainer_widget_container__L_SK_" data-layouttype="partialwidth">
+</div> -->
