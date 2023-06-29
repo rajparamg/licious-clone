@@ -19,18 +19,18 @@
     }
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn {
+.popularChoicespopularChoicesContainerParent {
     display: flex;
     justify-content: center
 }
 
 @media screen and (min-width: 900px) {
-    .popularChoices_popularChoicesContainerParent__3wyMn {
+    .popularChoicespopularChoicesContainerParent {
         padding:40px
     }
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v {
+.popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer {
     width: 100%;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -40,33 +40,33 @@
 }
 
 @media screen and (max-width: 900px) {
-    .popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v {
+    .popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer {
         padding-left:20px;
         padding-right: 20px
     }
 }
 
 @media screen and (min-width: 800px) {
-    .popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v {
+    .popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer {
         max-width:1080px;
         margin: 0 auto
     }
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v .popularChoices_singleSectionContainer__In5B8 {
+.popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer .popularChoicesSingleSectionContainer {
     line-height: 22px
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v .popularChoices_singleSectionContainer__In5B8 .popularChoices_categoryName__aDluZ {
+.popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer .popularChoicesSingleSectionContainer .popularChoicesCategoryName {
     margin: 16px 0 8px
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v .popularChoices_singleSectionContainer__In5B8 .popularChoices_categoryName__aDluZ a {
+.popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer .popularChoicesSingleSectionContainer .popularChoicesCategoryName a {
     font-weight: 700;
     font-size: 14px
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v .popularChoices_singleSectionContainer__In5B8 a {
+.popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer .popularChoicesSingleSectionContainer a {
     font-weight: 500;
     font-size: 12px;
     display: inline-block;
@@ -74,7 +74,7 @@
     color: #000
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v .popularChoices_singleSectionContainer__In5B8 a:after {
+.popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer .popularChoicesSingleSectionContainer a:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -87,7 +87,7 @@
     transition: transform .25s ease-out
 }
 
-.popularChoices_popularChoicesContainerParent__3wyMn .popularChoices_popularChoicesContainer__hEC6v .popularChoices_singleSectionContainer__In5B8 a:hover:after {
+.popularChoicespopularChoicesContainerParent .popularChoicesPopularChoicesContainer .popularChoicesSingleSectionContainer a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left
 }

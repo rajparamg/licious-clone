@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,22 @@ export class AppComponent {
   title = 'licious-clone';
   showDrawer:boolean | any;
   constructor(private router:Router){
-    this.router.navigate(['./products'])
+    this.router.navigate(['./home']);
   }
 
+  onLiciousLogoClick(evt:Event){
+    console.log('onLiciousLogoClick');
+    let activeRoute=this.router.routerState.snapshot.url;
+    if (activeRoute != "/home") {
+      this.router.navigate(['./home']);
+    }
+    console.log(this.router.routerState.snapshot.url);
+  }
+  onLocationClick(evt:Event){
+    console.log('onLocationClick');
+    
+    console.log();
+  }
   onLogIn(){
     console.log('onLogIn');
     this.showDrawer=true;

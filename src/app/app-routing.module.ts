@@ -4,7 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
-  {path:'products', component:HomeComponent},
+  {path:'home', component:HomeComponent},
   {path:'cart', component:CartComponent},
 ];
 

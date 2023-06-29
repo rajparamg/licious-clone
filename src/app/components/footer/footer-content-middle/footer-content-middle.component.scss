@@ -229,18 +229,18 @@
     }
 }
 
-.CitiesWeServe_citiesSectionContainerParent__873aP {
+.citiesWeServeCitiesSectionContainerParent {
     background: #faf7f2;
     width: 100%
 }
 
 @media screen and (min-width: 900px) {
-    .CitiesWeServe_citiesSectionContainerParent__873aP {
+    .citiesWeServeCitiesSectionContainerParent {
         padding:40px
     }
 }
 
-.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO {
+.citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -248,7 +248,7 @@
     margin: 0 auto
 }
 
-.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_sectionHeading__ctqOW {
+.citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer .citiesWeServeSectionHeading {
     font-family: Satoshi-Variable;
     font-weight: 700;
     font-size: 14px;
@@ -259,18 +259,18 @@
 }
 
 @media screen and (max-width: 900px) {
-    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_sectionHeading__ctqOW {
+    .citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer .citiesWeServeSectionHeading {
         font-size:14px;
         text-align: start
     }
 
-    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO {
+    .citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer {
         padding-left: 20px;
         padding-right: 20px
     }
 }
 
-.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg {
+.citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer .citiesWeServeCitiesContainer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -278,7 +278,7 @@
     gap: 12px
 }
 
-.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg .CitiesWeServe_individualCities__haoUz {
+.citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer .citiesWeServeCitiesContainer .citiesWeServeIndividualCities {
     font-family: Satoshi-Variable;
     font-weight: 500;
     font-size: 14px;
@@ -293,18 +293,18 @@
 }
 
 @media screen and (max-width: 900px) {
-    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg .CitiesWeServe_individualCities__haoUz {
+    .citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer .citiesWeServeCitiesContainer .citiesWeServeIndividualCities {
         padding:6px 12px;
         justify-self: start
     }
 
-    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg {
+    .citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer .citiesWeServeCitiesContainer {
         grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
         grid-column-gap: 30px;
         grid-row-gap: 10px
     }
 
-    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO {
+    .citiesWeServeCitiesSectionContainerParent .citiesWeServeCitiesSectionContainer {
         padding: 20px
     }
 }

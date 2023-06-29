@@ -83,43 +83,11 @@
 </div>
 
 <!-- Cities we serve design start -->
-<div *ngIf="citiesWeServe" class="CitiesWeServe_citiesSectionContainerParent__873aP">
-    <div class="CitiesWeServe_citiesSectionContainer__aTShO"><span class="CitiesWeServe_sectionHeading__ctqOW">{{citiesWeServe.name | uppercase}}</span>
-        <div class="CitiesWeServe_citiesContainer___86cg">
-            <div *ngFor="let d of citiesWeServe.cities" class="CitiesWeServe_individualCities__haoUz"><a [href]="d.url"
+<div *ngIf="citiesWeServe" class="citiesWeServeCitiesSectionContainerParent">
+    <div class="citiesWeServeCitiesSectionContainer"><span class="citiesWeServeSectionHeading">{{citiesWeServe.name | uppercase}}</span>
+        <div class="citiesWeServeCitiesContainer">
+            <div *ngFor="let d of citiesWeServe.cities" class="citiesWeServeIndividualCities"><a [href]="d.url"
                     [id]="d.name">{{d.name}}</a></div>
-            <!-- <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/ncr" id="NCR">NCR</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/hyderabad"
-                    id="Hyderabad">Hyderabad</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/chandigarh"
-                    id="Chandigarh">Chandigarh</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/panchkula"
-                    id="Panchkula">Panchkula</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/mohali" id="Mohali">Mohali</a>
-            </div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/mumbai" id="Mumbai">Mumbai</a>
-            </div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/pune" id="Pune">Pune</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/chennai"
-                    id="Chennai">Chennai</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/coimbatore"
-                    id="Coimbatore">Coimbatore</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/jaipur" id="Jaipur">Jaipur</a>
-            </div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/cochin" id="Cochin">Cochin</a>
-            </div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/vijayawada"
-                    id="Vijayawada">Vijayawada</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/visakhapatnam"
-                    id="Visakhapatnam">Visakhapatnam</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/kolkata"
-                    id="Kolkata">Kolkata</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/lucknow"
-                    id="Lucknow">Lucknow</a></div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/kanpur" id="Kanpur">Kanpur</a>
-            </div>
-            <div class="CitiesWeServe_individualCities__haoUz"><a href="/buy-meat-online/nagpur" id="Nagpur">Nagpur</a>
-            </div> -->
         </div>
     </div>
 </div>
