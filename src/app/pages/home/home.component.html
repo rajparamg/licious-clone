@@ -10,25 +10,25 @@
 
   <!-- <app-category-holder [bestSellers]="bestSellers"></app-category-holder> -->
   <!-- Best Sellers meat -->
-  <app-purchase-item [itemData]="bestSellers"></app-purchase-item>
+  <app-purchase-item [itemData]="bestSellers" (onAddItem)="addItemToCart($event)" (onRemoveItem)="removeItemFromCart($event)" [selectedItems]="selectedCartItems"></app-purchase-item>
 
   <app-category-holder [freshLicious]="freshLicious"></app-category-holder>
   <!-- <app-category-holder [combos]="combosForYou"></app-category-holder> -->
 
   <!-- Combos meat -->
-  <app-purchase-item [itemData]="combosForYou"></app-purchase-item>
+  <app-purchase-item [itemData]="combosForYou"  (onAddItem)="addItemToCart($event)" (onRemoveItem)="removeItemFromCart($event)" [selectedItems]="selectedCartItems"></app-purchase-item>
 
   <!-- Ruppee 199 lover meat -->
-  <app-purchase-item [itemData]="oneNinenineLoverData"></app-purchase-item>
+  <app-purchase-item [itemData]="oneNinenineLoverData"  (onAddItem)="addItemToCart($event)" (onRemoveItem)="removeItemFromCart($event)" [selectedItems]="selectedCartItems"></app-purchase-item>
 
   <!-- Breakfast meat -->
-  <app-purchase-item [itemData]="breakfastmeatData"></app-purchase-item>
+  <app-purchase-item [itemData]="breakfastmeatData"  (onAddItem)="addItemToCart($event)" (onRemoveItem)="removeItemFromCart($event)" [selectedItems]="selectedCartItems"></app-purchase-item>
 
   <!-- Delicious meats -->
-  <app-purchase-item [itemData]="deliciousBonlessData"></app-purchase-item>
+  <app-purchase-item [itemData]="deliciousBonlessData"  (onAddItem)="addItemToCart($event)" (onRemoveItem)="removeItemFromCart($event)" [selectedItems]="selectedCartItems"></app-purchase-item>
 
   <!-- Top rated meats -->
-  <app-purchase-item [itemData]="topRatedMeatData"></app-purchase-item>
+  <app-purchase-item [itemData]="topRatedMeatData"  (onAddItem)="addItemToCart($event)" (onRemoveItem)="removeItemFromCart($event)" [selectedItems]="selectedCartItems"></app-purchase-item>
 </div>
 
 <!-- Footer of Home/Product pages -->

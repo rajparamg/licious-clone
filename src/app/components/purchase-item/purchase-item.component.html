@@ -18,11 +18,23 @@
                                     decoding="async" data-nimg="fill"
                                     class="SmallProductCard_smallProductImage__7htJF" sizes="100vw"
                                     style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"></span>
-                            <div class="SmallProductCard_single_box__WAM3L"><button
-                                    class="SmallProductCard_increase_button__Z6tkc home-add-to-cart add-to-cart"><img
-                                        src="https://licious.in/image/rebranding/svg/Plus.svg" width="12" height="12"
-                                        loading="lazy"></button></div>
+                                    <div *ngIf="!isSelectedItems || !selectedItems[d.type] || !selectedItems[d.type][d.name]" (click)="addItemToCart($event,d)" class="SmallProductCard_single_box__WAM3L"><button
+                                        class="SmallProductCard_increase_button__Z6tkc home-add-to-cart add-to-cart"><img
+                                            src="https://licious.in/image/rebranding/svg/Plus.svg" width="12" height="12"
+                                            loading="lazy"></button></div>
+                                            <!-- start -->
+                            <div *ngIf="isSelectedItems && selectedItems[d.type] && selectedItems[d.type][d.name]" class="SmallProductCard_extended_box__s84vE"><button (click)="removeItemFromCart($event,d)"
+                                class="SmallProductCard_decrease_button__ZNqUq home-add-to-cart add-to-cart"><img
+                                    src="https://licious.in/image/rebranding/svg/Minus.svg" width="12" height="12"
+                                    loading="lazy"></button><span
+                                class="SmallProductCard_quantity__FU_d2">{{selectedItems[d.type][d.name]}}</span><button (click)="addItemToCart($event,d)"
+                                class="SmallProductCard_increase_button__Z6tkc home-add-to-cart add-to-cart"><img
+                                    src="https://licious.in/image/rebranding/svg/Plus.svg" width="12" height="12" loading="lazy"></button>
                         </div>
+                        </div>
+                        <!-- start -->
+                        
+                        <!-- end -->
                         <div class="SmallProductCard_text_wrapper__pcibR"><span
                                 class="SmallProductCard_title__ezUx4 title_4">{{d.name}}</span><span
                                 data-testid="undefined-display-net-wt"

@@ -1,3 +1,7 @@
+// scss
+$themeColor: #D11243;
+
+
 .navigationContainer {
     z-index: 100;
     position: sticky;
@@ -245,8 +249,56 @@
 }
 
 .LocationHeader_popup__9BgT7 .LocationHeader_cta_row__QmsDx .LocationHeader_confirm__iTH_k {
-    background: var(--theme-color);
+    background: $themeColor;
     color: #fff;
-    border-color: var(--theme-color)
+    border-color: $themeColor
+}
+
+
+.checkout_button,.Checkout_non_empty_cart__zCVW1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+    transform: translateY(-2px)
+}
+
+.checkout_button .checkout_cart_details,.checkout_button .Checkout_columnStyle__bQXTK,.checkout_button .checkout_rowStyle,.Checkout_non_empty_cart__zCVW1 .checkout_cart_details,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK,.Checkout_non_empty_cart__zCVW1 .checkout_rowStyle {
+    height: 35px;
+    min-width: 50px
+}
+
+.checkout_button .checkout_cart_details .Checkout_cart_value__hi3ee,.checkout_button .Checkout_columnStyle__bQXTK .Checkout_cart_value__hi3ee,.checkout_button .checkout_rowStyle .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .checkout_cart_details .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK .Checkout_cart_value__hi3ee,.Checkout_non_empty_cart__zCVW1 .checkout_rowStyle .Checkout_cart_value__hi3ee {
+    color: $themeColor;
+    width: -moz-max-content;
+    width: max-content
+}
+
+.checkout_button .Checkout_columnStyle__bQXTK,.Checkout_non_empty_cart__zCVW1 .Checkout_columnStyle__bQXTK {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.checkout_button .checkout_rowStyle,.Checkout_non_empty_cart__zCVW1 .checkout_rowStyle {
+    display: flex;
+    flex-direction: row;
+    height: 100%
+}
+
+.Checkout_non_empty_cart__zCVW1 {
+    border: 1px solid $themeColor;
+    border-radius: 8px;
+    padding: 9px 12px;
+    height: 50px;
+    transform: translateY(0)
+}
+
+@media(max-width: 768px) {
+    .checkout_button,.Checkout_non_empty_cart__zCVW1 {
+        display:none
+    }
 }
 //navigation css end

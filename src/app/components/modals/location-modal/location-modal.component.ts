@@ -9,7 +9,8 @@ export class LocationModalComponent implements OnInit {
   showLocationModal:boolean=false;
   @HostListener('document:click', ['$event'])
   clickout(event:any) {
-    if (event.target.className.includes('modalBottomsheetBackdrop') || event.target.className.includes('closeImg')) {
+    let className=event.target.className;
+    if (className.includes('modalBottomsheetBackdrop') || className.includes('closeImg') || className.includes('locationHeaderCancel')) {
       this.showLocationModal=false;
     }
   }
