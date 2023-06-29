@@ -1,0 +1,62 @@
+<ng-container *ngIf="itemData">
+    <div data-testid="widget_container" class="WidgetContainer_widget_container__L_SK_"
+        data-layouttype="partialwidth">
+        <header>
+            <h1 class="title_2">{{itemData.name}}</h1>
+            <h2 class="text_1">{{itemData.description}}</h2>
+        </header>
+        <div class="Carousel_carousel_container__T6gc5">
+            <section class="Carousel_normal_slider__w6zPU">
+                <div class="Carousel_spacer__0hRzh"></div>
+                <article *ngFor="let d of itemData.data;" data-testid="widget_card" class="WidgetCard_product1__cX0W8">
+                    <article id="Combos for you_pr_5zil0lxs6fp">
+                        <div class="SmallProductCard_image_wrapper__zLcrP"><span
+                                style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
+                                    data-testid="undefined-img-web"
+                                    placeholderimage="https://licious.in/image/product_place_holder.jpeg" alt="Goat Mince - Combo"
+                                    [src]="d.avatar"
+                                    decoding="async" data-nimg="fill"
+                                    class="SmallProductCard_smallProductImage__7htJF" sizes="100vw"
+                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"></span>
+                            <div class="SmallProductCard_single_box__WAM3L"><button
+                                    class="SmallProductCard_increase_button__Z6tkc home-add-to-cart add-to-cart"><img
+                                        src="https://licious.in/image/rebranding/svg/Plus.svg" width="12" height="12"
+                                        loading="lazy"></button></div>
+                        </div>
+                        <div class="SmallProductCard_text_wrapper__pcibR"><span
+                                class="SmallProductCard_title__ezUx4 title_4">{{d.name}}</span><span
+                                data-testid="undefined-display-net-wt"
+                                class="SmallProductCard_sub_title__cbOP3 text_2" *ngIf="d.weight">{{d.weight}}gms</span>
+                                <span
+                                data-testid="undefined-display-net-wt"
+                                class="SmallProductCard_sub_title__cbOP3 text_2" *ngIf="!d.weight && !d.pieces"></span>
+                                <span data-testid="undefined-display-pieces"
+                                class="SmallProductCard_sub_title__cbOP3 text_2" *ngIf="d.pieces">{{d.pieces}} Pieces</span>
+                            <div class="SmallProductCard_price_wrapper__fR0cD"><span class="title_4"
+                                    data-testid="undefined-base-discount" *ngIf="d.discountPrice && d.price">₹{{d.discountPrice}}</span>
+                                    <span class="title_4"
+                                    data-testid="undefined-base-discount" *ngIf="!d.discountPrice && d.price">₹{{d.price}}</span>&nbsp;<span
+                                    data-testid="undefined-base-price-field"
+                                    class="SmallProductCard_cut_price__1JIw_ text_1" *ngIf="d.discountPrice && d.price">₹{{d.price}}</span><span
+                                    data-testid="undefined-discount-field"
+                                    class="SmallProductCard_offer__G0mv9 title_7" *ngIf="d.discountPer">{{d.discountPer}}% off</span></div>
+                            <div class="SmallProductCard_delivery_wrapper__5doc8"><img
+                                    data-testid="undefined-delivery-type-img"
+                                    src="https://licious.in/image/rebranding/svg/express-del.svg" width="12" height="12"
+                                    loading="lazy"><span data-testid="undefined-pr-next-availability"
+                                    class="text_2">Today in <b>{{d.deliverIn}} min</b></span></div>
+                        </div>
+                    </article>
+                </article>
+                <article data-testid="widget_card" class="WidgetCard_product1__cX0W8">
+                    <article data-testid="view_all" class="ViewAllCard_view_all_card__WLRdQ title_4">View All
+                    </article>
+                </article>
+                <div class="Carousel_spacer__0hRzh"></div>
+            </section>
+            <article class="Carousel_right_arrow__EpitW"><img src="https://licious.in/image/carousel_arrow.svg" alt="right" width="8"
+                    height="16" role="svg"></article>
+            <!-- <article class="Carousel_left_arrow__CIjaR"><img src="https://licious.in/image/carousel_arrow.svg" alt="left" width="8" height="16" role="svg"></article> -->
+        </div>
+    </div>
+</ng-container>

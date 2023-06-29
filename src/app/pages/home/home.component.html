@@ -7,5 +7,31 @@
     </div>
 
   <app-category-holder [categories]="categories"></app-category-holder>
-  <app-category-holder [bestSellers]="bestSellers"></app-category-holder>
+
+  <!-- <app-category-holder [bestSellers]="bestSellers"></app-category-holder> -->
+  <!-- Best Sellers meat -->
+  <app-purchase-item [itemData]="bestSellers"></app-purchase-item>
+
+  <app-category-holder [freshLicious]="freshLicious"></app-category-holder>
+  <!-- <app-category-holder [combos]="combosForYou"></app-category-holder> -->
+
+  <!-- Combos meat -->
+  <app-purchase-item [itemData]="combosForYou"></app-purchase-item>
+
+  <!-- Ruppee 199 lover meat -->
+  <app-purchase-item [itemData]="oneNinenineLoverData"></app-purchase-item>
+
+  <!-- Breakfast meat -->
+  <app-purchase-item [itemData]="breakfastmeatData"></app-purchase-item>
+
+  <!-- Delicious meats -->
+  <app-purchase-item [itemData]="deliciousBonlessData"></app-purchase-item>
+
+  <!-- Top rated meats -->
+  <app-purchase-item [itemData]="topRatedMeatData"></app-purchase-item>
+</div>
+
+<!-- Footer of Home/Product pages -->
+<div id="footer">
+  <app-footer></app-footer>
 </div>

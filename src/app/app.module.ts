@@ -7,6 +7,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { DrawerComponent } from './components/drawer/drawer.component';
 import { CategoryHolderComponent } from './components/category-holder/category-holder.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FooterContentMiddleComponent } from './components/footer/footer-content-middle/footer-content-middle.component';
+import { FooterPopularSearchComponent } from './components/footer/footer-popular-search/footer-popular-search.component';
+import { PurchaseItemComponent } from './components/purchase-item/purchase-item.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { CategoryHolderComponent } from './components/category-holder/category-h
     HomeComponent,
     CartComponent,
     DrawerComponent,
-    CategoryHolderComponent
+    CategoryHolderComponent,
+    FooterComponent,
+    FooterContentMiddleComponent,
+    FooterPopularSearchComponent,
+    PurchaseItemComponent
   ],
   imports: [
     BrowserModule,

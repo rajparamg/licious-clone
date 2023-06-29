@@ -9,6 +9,8 @@ export class CategoryHolderComponent implements OnInit, OnChanges {
   // categories:Array<Category>=categories;
   @Input() categories: any;
   @Input() bestSellers: any;
+  @Input() freshLicious: any;
+  @Input() combos: any;
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
     

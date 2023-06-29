@@ -151,20 +151,33 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 400;
     margin: 0
 }
-.drawer {
-    height: 80%;
-    width: 0;
-    z-index: 1;
-    right: 0;
-    background-color: #df9b0a;
-    border-radius: 50px 0px 0px 50px;
-    overflow-x: hidden;
-    transition: 0.5s;
-    //padding-top: 60px;
-    position: fixed;
-    margin: auto
+// .drawer {
+//     height: 100%;
+//     width: 0;
+//     z-index: 290;
+//     right: 0;
+//     background-color: #df9b0a;
+//     // border-radius: 50px 0px 0px 50px;
+//     overflow-x: hidden;
+//     transition: 0.5s;
+//     //padding-top: 60px;
+//     position: fixed;
+//     margin: auto
+//   }
+  .drawer {
+    display: none;
+    // height: 100%;
+    // width: 0;
+    // z-index: 290;
+    // right: 0;
+    // background-color: #df9b0a;
+    // // border-radius: 50px 0px 0px 50px;
+    // overflow-x: hidden;
+    // transition: 0.5s;
+    // //padding-top: 60px;
+    // position: fixed;
+    // margin: auto
   }
-
 // .FormWrapper_form_wrapper__DEx_r .FormWrapper_lock_screen_web__hFWfx {
     .drawer .backdrop {
     position: fixed;
@@ -182,4 +195,7 @@ h1,h2,h3,h4,h5,h6 {
     right: 450px;
     z-index: 500;
     cursor: pointer;
+}
+.footerContainer a {
+    color: #111
 }

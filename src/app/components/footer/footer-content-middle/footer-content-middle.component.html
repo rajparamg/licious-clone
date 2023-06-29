@@ -1,0 +1,126 @@
+<div class="footerMiddleContent">
+    <div class="footerlogoSection"><a href="/" data-eventlabel="Licious Logo"><img alt="Licious"
+                src="https://www.licious.in/image/rebranding/png/logo-homepage.png"></a></div>
+    <div class="footer_line"></div>
+</div>
+
+<div class="footerMainLinksContainerParent">
+    <div class="footerMainLinksContainer">
+        <div class="footerSocialMediaSectionContainer">
+            <div class="footerSharingAppsContainer"><span class="footerSectionHeading">EXPERIENCE
+                    LICIOUS APP ON MOBILE</span>
+                <div class="footerImageContainer"><a target="_blank" data-type="iOS" rel="noopener noreferrer"
+                        href="https://itunes.apple.com/in/app/fresh-meat-online-licious/id1052440342?mt=8"><img
+                            src="https://www.licious.in/image/rebranding/png/app-store-homepage.png"
+                            alt="App Store"></a><a target="_blank" data-type="Android" rel="noopener noreferrer"
+                        href="https://play.google.com/store/apps/details?id=com.licious&amp;hl=en"><img
+                            src="https://www.licious.in/image/rebranding/png/playstore-homepage.png"
+                            alt="Play Store"></a></div>
+            </div>
+            <div class="footerSocialMediaContainer"><span class="footerSectionHeading">KEEP IN
+                    TOUCH</span>
+                <div class="footerSocialMediaItemContainer"><a target="_blank" data-type="Twitter"
+                        rel="noopener noreferrer" href="https://twitter.com/LiciousFoods"><img
+                            src="https://www.licious.in/image/rebranding/png/twitter-homepage.png" alt="Twitter"></a><a
+                        target="_blank" data-type="Facebook" rel="noopener noreferrer"
+                        href="https://www.facebook.com/LiciousFoods"><img
+                            src="https://www.licious.in/image/rebranding/png/fb-homepage.png" alt="Facebook"></a><a
+                        target="_blank" data-type="Instagram" rel="noopener noreferrer"
+                        href="https://www.instagram.com/licious_foods"><img
+                            src="https://www.licious.in/image/rebranding/png/insta-homepage.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerUsefulLinksContainer"><span class="footerSectionHeading">USEFUL LINKS</span>
+            <div class="footer_linksOuterContainer">
+                <div>
+                    <ul>
+                        <li><a href="https://www.licious.in/why-licious">Why Licious?</a></li>
+                        <li><a href="https://www.licious.in/refer/tc">Refer &amp; Earn</a></li>
+                        <li><a href="https://www.licious.in/licious-cash">Licious Cash &amp; Cash+</a></li>
+                        <li><a target="_blank" rel="noopener noreferrer"
+                                data-eventlabel="Useful Links - Licious Cash &amp; Cash+"
+                                href="http://careers.licious.in">Careers</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" data-eventlabel="Useful Links - Blog"
+                                href="https://www.licious.in/blog/ ">BLOG</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a rel="noopener noreferrer" target="_blank" data-eventlabel="About-us-new"
+                                href="https://www.licious.in/about-us">About Us</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" data-eventlabel="About-us-new "
+                                href="https://www.licious.in/bug-bounty-guidelines">Bug Bounty Guidelines</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" data-eventlabel="Contact us - T&amp;C"
+                                href="https://www.licious.in/terms">T&amp;C</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" data-eventlabel="Contact us - FAQ "
+                                href="https://www.licious.in/faq">FAQ</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank" data-eventlabel="Contact us - Privacy Policy "
+                                href="https://www.licious.in/privacy-policy">Privacy Policy</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank"
+                                href="https://www.licious.in/fssc-certificate">FSSC 22000
+                                Certification</a></li>
+                        <li><a rel="noopener noreferrer" target="_blank"
+                                href="https://www.licious.in/SA8000-certification">SA8000
+                                Certification</a></li>
+                        <li><a href="https://www.licious.in/sitemap">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerContactContainerSection">
+            <div class="footerContactUsContainer"><span class="footerSectionHeading">CONTACT US</span>
+                <p>Call: <!-- -->1800-4190-786<!-- --> <br><a
+                        href="mailto:talktous@licious.com">talktous@licious.com</a><br><span
+                        class="footerAddressContent">REGISTERED OFFICE ADDRESS:<br>House of Licious, Zed Pearl,
+                        No 12, Domlur Layout<br>Bangalore, Karnataka - 560071</span></p>
+            </div>
+            <div class="footerCardsContainer"><img src="https://www.licious.in/image/rebranding/png/3-dsecure.png"
+                    alt="Visa MasterCard"><br><span class="footerSectionHeading">HAVE SECURITY
+                    CONCERN?</span><br><span>Mail us to: <!-- -->security@licious.com</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Cities we serve design start -->
+<div *ngIf="citiesWeServe" class="CitiesWeServe_citiesSectionContainerParent__873aP">
+    <div class="CitiesWeServe_citiesSectionContainer__aTShO"><span class="CitiesWeServe_sectionHeading__ctqOW">{{citiesWeServe.name | uppercase}}</span>
+        <div class="CitiesWeServe_citiesContainer___86cg">
+            <div *ngFor="let d of citiesWeServe.cities" class="CitiesWeServe_individualCities__haoUz"><a [href]="d.url"
+                    [id]="d.name">{{d.name}}</a></div>
+            <!-- <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/ncr" id="NCR">NCR</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/hyderabad"
+                    id="Hyderabad">Hyderabad</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/chandigarh"
+                    id="Chandigarh">Chandigarh</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/panchkula"
+                    id="Panchkula">Panchkula</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/mohali" id="Mohali">Mohali</a>
+            </div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/mumbai" id="Mumbai">Mumbai</a>
+            </div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/pune" id="Pune">Pune</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/chennai"
+                    id="Chennai">Chennai</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/coimbatore"
+                    id="Coimbatore">Coimbatore</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/jaipur" id="Jaipur">Jaipur</a>
+            </div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/cochin" id="Cochin">Cochin</a>
+            </div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/vijayawada"
+                    id="Vijayawada">Vijayawada</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/visakhapatnam"
+                    id="Visakhapatnam">Visakhapatnam</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/kolkata"
+                    id="Kolkata">Kolkata</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/lucknow"
+                    id="Lucknow">Lucknow</a></div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="https://licious.in/buy-meat-online/kanpur" id="Kanpur">Kanpur</a>
+            </div>
+            <div class="CitiesWeServe_individualCities__haoUz"><a href="/buy-meat-online/nagpur" id="Nagpur">Nagpur</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- Cities we serve design end -->

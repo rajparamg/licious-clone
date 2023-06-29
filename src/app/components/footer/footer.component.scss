@@ -1,0 +1,121 @@
+
+@keyframes Footer_staticPopup__Ld5w3 {
+    0% {
+        transform: translateY(900)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes Footer_flicker__Iwv1i {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
+.footerContainer {
+    font-family: Satoshi-Variable;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%
+}
+
+
+
+.footerContainer .Footer_middleContent__l0HGc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+    background: #fff;
+    max-width: 1080px;
+    margin: 0 auto
+}
+.footerContainer .rightsContainer {
+    background: #464646;
+    color: #fff;
+    padding: 40px 180px 70px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Satoshi-Variable
+}
+
+.footerContainer .rightsContainer .firstLine {
+    margin-bottom: 30px
+}
+
+@media screen and (max-width: 900px) {
+    .footerContainer .rightsContainer {
+        padding-left:20px;
+        padding-right: 20px
+    }
+}
+
+@keyframes LiciousValueComponent_staticPopup__mNac_ {
+    0% {
+        transform: translateY(900)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes LiciousValueComponent_flicker__gmfbu {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
+.componentContainerParent {
+    background-color: #fdf3f6;
+    padding: 40px;
+    display: flex;
+    justify-content: center
+}
+
+.componentContainerParent .componentLiciousValueContainer {
+    max-width: 1080px
+}
+
+.componentContainerParent .componentLiciousValueContainer .liciousValues_gridContainer {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr))
+}
+
+.componentContainerParent .componentLiciousValueContainer .liciousValues_gridContainer .liciousValueSectionContainer .liciousValuesContent,.componentContainerParent .componentLiciousValueContainer .liciousValues_gridContainer .liciousValueSectionContainer .liciousValuesHeading {
+    font-size: 14px;
+    line-height: 25px;
+    color: #111
+}
+
+.componentContainerParent .componentLiciousValueContainer .liciousValues_gridContainer .liciousValueSectionContainer .liciousValuesHeading {
+    font-family: Satoshi-Variable;
+    font-weight: 700
+}
+
+.componentContainerParent .componentLiciousValueContainer .liciousValues_gridContainer .liciousValueSectionContainer .liciousValuesContent {
+    font-family: Satoshi-Variable;
+    font-weight: 400
+}
+
+.componentContainerParent .componentLiciousValueContainer .liciousValues_gridContainer .liciousValueSectionContainer .liciousValuesTopSmallBorder {
+    height: 4px;
+    width: 40px;
+    background-color: #d11243;
+    border-radius: 2px
+}

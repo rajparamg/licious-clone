@@ -35,14 +35,16 @@ export class DrawerComponent implements OnChanges,OnInit {
       formWidth = 350;
     }
     const style = this.drawerElement.nativeElement.style;
-    style.width = formWidth + 'px';
+    // style.width = formWidth + 'px';
+    style.display = 'block';
     // this.drawerElement.nativeElement.classList.add("actionForm");//now adding width by screen media quries
     // this.isFormShown = true;
   }
 
   closeDrawer() {
     const style = this.drawerElement.nativeElement.style;
-    style.width = '0'
+    style.display = 'none';
+    // style.width = '0'
     console.log('..Close Drawer..');
     
     // if (this.isFormShown) {

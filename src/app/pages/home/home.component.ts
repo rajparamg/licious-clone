@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { bestSellers, categories } from './state/home.data';
+import { bestSellers, breakfastmeat, categories, combos, deliciousBonless, fresh, oneNinenineLover, topRatedMeat } from './state/home.data';
 import { Category } from './state/home.model';
 
 @Component({
@@ -9,7 +9,13 @@ import { Category } from './state/home.model';
 })
 export class HomeComponent implements OnInit {  
   categories: Array<Category> = categories;
-  bestSellers: Array<any> = bestSellers;
+  bestSellers: Object = bestSellers;
+  freshLicious: Array<any> = fresh;
+  combosForYou: Object = combos;
+  oneNinenineLoverData: Object = oneNinenineLover;
+  breakfastmeatData: Object = breakfastmeat;
+  deliciousBonlessData: Object = deliciousBonless;
+  topRatedMeatData: Object = topRatedMeat;
   constructor() { }
   ngOnInit(): void {
  

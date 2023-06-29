@@ -1,0 +1,312 @@
+.footerMiddleContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+    background: #fff;
+    max-width: 1080px;
+    margin: 0 auto
+}
+
+.footerMiddleContent .footerlogoSection img {
+    height: 30px
+}
+
+.footerMiddleContent .footer_line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #eaeaea;
+    right: 0;
+    top: -5px
+}
+
+@media screen and (max-width: 900px) {
+    .footerMiddleContent {
+        justify-content:space-around;
+        align-items: center;
+        padding: 32px 20px;
+        gap: 10px
+    }
+}
+
+.footerMainLinksContainerParent {
+    background: #fff;
+    display: flex;
+    justify-content: center
+}
+
+@media screen and (min-width: 900px) {
+    .footerMainLinksContainerParent {
+        padding:10px
+    }
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer {
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    justify-content: center;
+    gap: 20px
+}
+
+@media screen and (max-width: 900px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer {
+        padding-left:20px;
+        padding-right: 20px
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer {
+        width:1080px
+    }
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerSectionHeading {
+    font-family: Satoshi-Variable;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #111
+}
+
+@media screen and (max-width: 900px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerSectionHeading {
+        font-size:14px
+    }
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerSocialMediaSectionContainer .footerSharingAppsContainer .footerImageContainer {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerSocialMediaSectionContainer .footerSharingAppsContainer .footerImageContainer img {
+    height: 50px
+}
+
+@media screen and (max-width: 900px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerSocialMediaSectionContainer .footerSharingAppsContainer .footerImageContainer img {
+        max-width:150px;
+        width: 100%;
+    }
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerSocialMediaSectionContainer .footerSocialMediaContainer {
+    margin-top: 40px
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerSocialMediaSectionContainer .footerSocialMediaContainer .footerSocialMediaItemContainer {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerSocialMediaSectionContainer .footerSocialMediaContainer .footerSocialMediaItemContainer img {
+    height: 36px
+}
+
+@media screen and (max-width: 600px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerSocialMediaSectionContainer {
+        padding-top:10px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4
+    }
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerUsefulLinksContainer {
+    width: 100%
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerUsefulLinksContainer .footer_linksOuterContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 40px;
+}
+.footer_linksOuterContainer a, .footerContactUsContainer a{
+    color: #111;
+}
+.footerMainLinksContainerParent .footerMainLinksContainer .footerUsefulLinksContainer .footer_linksOuterContainer li {
+    display: block;
+    font-size: 14px
+}
+
+@media screen and (max-width: 600px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerUsefulLinksContainer {
+        grid-column-start:1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2
+    }
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerContactUsContainer {
+    height: 100px
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerContactUsContainer p {
+    font-size: 14px
+}
+
+@media screen and (max-width: 900px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerContactUsContainer p {
+        font-size:12px
+    }
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerCardsContainer {
+    font-size: 14px
+}
+
+.footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerCardsContainer img {
+    height: 35px;
+    margin-bottom: 20px
+}
+
+@media screen and (max-width: 900px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerCardsContainer img {
+        height:24px
+    }
+
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerCardsContainer {
+        font-size: 12px
+    }
+
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection .footerAddressContent {
+        display: none
+    }
+
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection {
+        gap: 0
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footerMainLinksContainerParent .footerMainLinksContainer .footerContactContainerSection {
+        flex-direction:row;
+        gap: 20px;
+        order: 2;
+        padding-top: 10px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3
+    }
+}
+
+// Cities we serve CSS rule start
+
+@keyframes CitiesWeServe_staticPopup__E6y0i {
+    0% {
+        transform: translateY(900)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes CitiesWeServe_flicker__c2iGR {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
+.CitiesWeServe_citiesSectionContainerParent__873aP {
+    background: #faf7f2;
+    width: 100%
+}
+
+@media screen and (min-width: 900px) {
+    .CitiesWeServe_citiesSectionContainerParent__873aP {
+        padding:40px
+    }
+}
+
+.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: 0 auto
+}
+
+.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_sectionHeading__ctqOW {
+    font-family: Satoshi-Variable;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #111;
+    text-align: left;
+    padding-bottom: 20px
+}
+
+@media screen and (max-width: 900px) {
+    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_sectionHeading__ctqOW {
+        font-size:14px;
+        text-align: start
+    }
+
+    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px
+}
+
+.CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg .CitiesWeServe_individualCities__haoUz {
+    font-family: Satoshi-Variable;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 24px;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center
+}
+
+@media screen and (max-width: 900px) {
+    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg .CitiesWeServe_individualCities__haoUz {
+        padding:6px 12px;
+        justify-self: start
+    }
+
+    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO .CitiesWeServe_citiesContainer___86cg {
+        grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 10px
+    }
+
+    .CitiesWeServe_citiesSectionContainerParent__873aP .CitiesWeServe_citiesSectionContainer__aTShO {
+        padding: 20px
+    }
+}
+// Cities we serve CSS rule end
+
