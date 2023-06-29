@@ -1,0 +1,110 @@
+$themeColor: #D11243;
+
+.modalBottomsheetBackdrop,.Modal_location_popup_backdrop__BGnPo {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.639);
+    z-index: 1001;
+    position: fixed;
+    top: 0
+}
+.modalDialogwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 0;
+    right: 0
+}
+.Modal_close_dialog___W_Mb,.modalCloseDialogSmall{
+    margin-bottom: 1rem;
+    cursor: pointer
+}
+
+.Modal_dialog_container__DB_f5,.modalDialogContainerSmall {
+    cursor: auto;
+    width: 500px;
+    border-radius: 8px;
+    max-height: 650px;
+    overflow: auto
+}
+
+.Modal_dialog_container__DB_f5::-webkit-scrollbar,.modalDialogContainerSmall::-webkit-scrollbar {
+    display: none
+}
+
+.modalDialogContainerSmall {
+    width: 420px;
+    max-width: 80%;
+    max-height: 250px
+}
+
+@media screen and (max-width: 800px) {
+    .modalDialogContainerSmall {
+        max-width:90%
+    }
+}
+.locationHeaderPopup .locationHeaderCtaRow .locationHeaderCancel, .locationHeaderPopup .locationHeaderCtaRow .locationHeaderConfirm {
+    min-width: 120px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 4px;
+    border: 1px solid;
+    margin-right: 5px;
+    transition: all .15s ease-in;
+    background: #fff;
+    cursor: pointer;
+}
+.locationHeaderPopup .locationHeaderCtaRow .locationHeaderConfirm {
+    background: $themeColor;
+    color: #fff;
+    border-color: $themeColor;
+}
+.locationHeaderPopup .locationHeaderCtaRow .locationHeaderCancel, .locationHeaderPopup .locationHeaderCtaRow .locationHeaderConfirm {
+    min-width: 120px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 4px;
+    border: 1px solid;
+    margin-right: 5px;
+    transition: all .15s ease-in;
+    background: #fff;
+    cursor: pointer;
+}
+.locationHeaderPopup .locationHeaderMessage {
+    font-size: 15px;
+    color: #6d6e71;
+    margin-bottom: 33px;
+}
+.locationHeaderPopup .locationHeaderHeading {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #0d0d0e;
+    margin-bottom: 8px;
+}
+.locationHeaderPopup {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 35px rgba(0,0,0,.35);
+    padding: 20px;
+}
+.locationHeaderPopup .locationHeaderCtaRow .locationHeaderCancel:hover, .locationHeaderPopup .locationHeaderCtaRow .locationHeaderConfirm:hover {
+    box-shadow: inset 3px -3px 15px rgba(0,0,0,.2);
+}
+.locationHeaderPopup .locationHeaderCtaRow .locationHeaderConfirm {
+    background: $themeColor;
+    color: #fff;
+    border-color: $themeColor;
+}
+.locationHeaderPopup .locationHeaderCtaRow {
+    display: flex;
+    justify-content: flex-end;
+}

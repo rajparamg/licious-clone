@@ -1,0 +1,15 @@
+<div class="modalBottomsheetBackdrop" *ngIf="showLocationModal">
+    <div class="modalDialogwrapper" #locationModal>
+        <div class="modalCloseDialogSmall" ><img src="https://licious.in/image/rebranding/png/Cross@2x.png" height="32"
+                width="32" class="closeImg"></div>
+        <div class="modalDialogContainerSmall" (click)="onModalClick()">
+            <div class="locationHeaderPopup">
+                <div class="locationHeaderHeading">Looking at changing your location?</div>
+                <div class="locationHeaderMessage">This might affect the availability of items in your cart.
+                    Stay here/Change Location</div>
+                <div class="locationHeaderCtaRow"><button class="locationHeaderCancel">Stay
+                        Here</button><button class="locationHeaderConfirm">Change Area</button></div>
+            </div>
+        </div>
+    </div>
+</div>

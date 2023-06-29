@@ -11,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FooterContentMiddleComponent } from './components/footer/footer-content-middle/footer-content-middle.component';
 import { FooterPopularSearchComponent } from './components/footer/footer-popular-search/footer-popular-search.component';
 import { PurchaseItemComponent } from './components/purchase-item/purchase-item.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { LocationModalComponent } from './components/modals/location-modal/location-modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PurchaseItemComponent } from './components/purchase-item/purchase-item.
     FooterComponent,
     FooterContentMiddleComponent,
     FooterPopularSearchComponent,
-    PurchaseItemComponent
+    PurchaseItemComponent,
+    HeaderComponent,
+    LocationModalComponent
   ],
   imports: [
     BrowserModule,

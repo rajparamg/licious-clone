@@ -3,50 +3,7 @@
 <!-- Drawer  start-->
 <app-drawer [showDrawer]="showDrawer"></app-drawer>
 <!-- Drawer end -->
-
-<!-- Header/top navigation start-->
-<section class="navigationContainer">
-  <header class="top_navigation_section" data-page="">
-    <nav class="header_container"><img (click)="onLiciousLogoClick($event)" class="licious_logo" loading="lazy"
-        height="52" width="100.74" alt="Licious" src="https://www.licious.in/image/rebranding/svg/licious-logo.svg">
-      <div  (click)="onLocationClick($event)" class="location_container"><img class="location_pin_label"
-          src="https://www.licious.in/image/default/svg/Other-label.svg" width="16" height="16" loading="lazy">
-        <div class="locationNameContainer">
-          <div class="locationName_top_part"><span
-              class="title_6 city_name">Bengaluru</span><img src="https://www.licious.in/image/new_chevron.svg"
-              width="12" height="6" loading="lazy"></div>
-          <div class="text_2 location_detecting locality_name">Detecting Location</div>
-        </div>
-      </div><a class="searchbar_container" href="https://www.licious.in/search"><input class="searchbar"
-          autocomplete="off"><label class="title_5 search_label">Search for any delicious
-          product</label></a>
-      <div class="thirdSection">
-        <div class="category_container">
-          <div class="categories_button"><img src="https://www.licious.in/image/rebranding/svg/categories-grey.svg"
-              alt="Categories dropdown"><span class="title_7 ">Categories</span></div>
-        </div>
-        <div class="loaderContainer" (click)="onLogIn()">
-          <div class="loaderOff"><span><img src="https://www.licious.in/image/rebranding/png/licious_smile.png"
-                alt="Licious"></span></div>
-          <div class="showChildrenProfile">
-            <div class="profile_container">
-              <div class="profile_button"><img src="https://www.licious.in/image/rebranding/svg/profile-grey.svg"
-                  alt="Profile" height="20" width="20" loading="lazy"><span
-                  class="title_7  namingGap">&nbsp;Login</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="checkout_button "><img src="https://www.licious.in/image/rebranding/svg/cart.svg" alt="Cart" height="20"
-            width="20" loading="lazy">
-          <div class="checkout_cart_details checkout_rowStyle"><span class="title_7">Cart</span></div>
-          <div class="materialize_toast materializeToast_with_tooltip"></div>
-          <div class="Toastify" id="checkoutAlert"></div>
-        </div>
-      </div>
-    </nav>
-  </header>
-</section>
-<!-- Header/top navigation end-->
+<app-header></app-header>
 
 <div>
   <div>

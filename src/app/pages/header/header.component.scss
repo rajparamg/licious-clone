@@ -1,0 +1,252 @@
+.navigationContainer {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    display: block;
+    width: 100%;
+    background-color: #fff
+}
+
+// navigation css start
+.top_navigation_section {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+.top_navigation_section .header_container {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    background: #fff;
+    position: relative;
+    height: 80px;
+    gap: 38px;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between
+}
+
+.top_navigation_section .header_container .licious_logo {
+    cursor: pointer
+}
+
+.top_navigation_section .header_container .thirdSection {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    align-items: center;
+    gap: 40px
+}
+
+.top_navigation_section .header_container .PageHeader_help_btn__UcTMf {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #6d6e71;
+    font-size: 12px;
+    color: #6d6e71;
+    background-color: #fff;
+    cursor: pointer
+}
+
+@media screen and (max-width: 900px) {
+    .top_navigation_section .header_container {
+        padding-left:20px;
+        padding-right: 20px
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top_navigation_section .header_container {
+        height:50px
+    }
+}
+
+.top_navigation_section .PageHeader_location_container__fwZLH {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 3%;
+    cursor: pointer
+}
+
+.top_navigation_section .PageHeader_dropLocation__WoAFf {
+    width: 28px;
+    height: 26px;
+    margin-top: 2px;
+    margin-left: 10px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.top_navigation_section .PageHeader_location__ynIHL {
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5px;
+    position: relative
+}
+
+.top_navigation_section .PageHeader_addressCity__DvpA3 {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.top_navigation_section .PageHeader_addressArea__yXYsK {
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 18ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.top_navigation_section .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw {
+    font-size: 13px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(49,49,49,.4);
+    position: relative;
+    top: 10%
+}
+
+.top_navigation_section .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw .PageHeader_inline_loader__IkR4V {
+    width: 15%;
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+    left: 0;
+    margin-left: 3%
+}
+
+.top_navigation_section .PageHeader_addressArea__yXYsK .PageHeader_loc_detect__jO2Zw .PageHeader_inline_loader__IkR4V img {
+    width: 100%
+}
+
+.top_navigation_section .PageHeader_dropdownArrow__j7uy8 {
+    width: 13.2px;
+    position: absolute;
+    height: 9px;
+    right: -20px;
+    bottom: 5px
+}
+
+@media(max-width: 769px) {
+    .licious_logo,.top_navigation_section[data-page=listingpage],.top_navigation_section[data-page=productpage] {
+        display:none
+    }
+
+    .top_navigation_section>.header_container {
+        padding: 10px;
+        cursor: pointer
+    }
+}
+
+.location_container {
+    display: flex;
+    max-width: 200px;
+    cursor: pointer
+}
+
+.location_container.LocationHeader_normal_cursor__ot_kr {
+    cursor: default
+}
+
+.location_container .location_pin_label {
+    margin: 4px 6px 0 0
+}
+
+.location_container .locationNameContainer {
+    max-width: 180px
+}
+
+.location_container .locationNameContainer .locationName_top_part {
+    position: relative;
+    display: inline-flex;
+    align-items: center
+}
+
+.location_container .locationNameContainer .locationName_top_part .city_name {
+    margin-right: 8px
+}
+
+.location_container .locationNameContainer .locality_name {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.location_container .locationNameContainer .locality_name.location_detecting {
+    font-style: italic
+}
+
+@media screen and (max-width: 800px) {
+    .location_container {
+        margin:20px 20px 20px 6px
+    }
+}
+
+.LocationHeader_popup__9BgT7 {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 35px rgba(0,0,0,.35);
+    padding: 20px
+}
+
+.LocationHeader_popup__9BgT7 .LocationHeader_heading__B1Otk {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #0d0d0e;
+    margin-bottom: 8px
+}
+
+.LocationHeader_popup__9BgT7 .LocationHeader_message__F7T5q {
+    font-size: 15px;
+    color: #6d6e71;
+    margin-bottom: 33px
+}
+
+.LocationHeader_popup__9BgT7 .LocationHeader_cta_row__QmsDx {
+    display: flex;
+    justify-content: flex-end
+}
+
+.LocationHeader_popup__9BgT7 .LocationHeader_cta_row__QmsDx .LocationHeader_cancel__lAL9G,.LocationHeader_popup__9BgT7 .LocationHeader_cta_row__QmsDx .LocationHeader_confirm__iTH_k {
+    min-width: 120px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 4px;
+    border: 1px solid;
+    margin-right: 5px;
+    transition: all .15s ease-in;
+    background: #fff;
+    cursor: pointer
+}
+
+.LocationHeader_popup__9BgT7 .LocationHeader_cta_row__QmsDx .LocationHeader_cancel__lAL9G:hover,.LocationHeader_popup__9BgT7 .LocationHeader_cta_row__QmsDx .LocationHeader_confirm__iTH_k:hover {
+    box-shadow: inset 3px -3px 15px rgba(0,0,0,.2)
+}
+
+.LocationHeader_popup__9BgT7 .LocationHeader_cta_row__QmsDx .LocationHeader_confirm__iTH_k {
+    background: var(--theme-color);
+    color: #fff;
+    border-color: var(--theme-color)
+}
+//navigation css end
