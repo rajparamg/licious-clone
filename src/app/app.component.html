@@ -2,6 +2,10 @@
 
 <!-- Drawer  start-->
 <app-drawer [showDrawer]="showDrawer"></app-drawer>
+
+<!-- card drawer -->
+<app-cart *ngIf="showCart$ | async"></app-cart>
+
 <!-- Drawer end -->
 <app-header></app-header>
 

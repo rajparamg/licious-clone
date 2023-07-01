@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { DrawerService } from './services/drawer/drawer.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +11,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AppComponent {
   title = 'licious-clone';
   showDrawer:boolean | any;
-  constructor(private router:Router){
+  showCart:boolean=false;
+  showCart$: Observable<any> | undefined;
+  cartDrawerData$: Observable<any> | undefined;
+  constructor(private router:Router, private drawerService:DrawerService){
     this.router.navigate(['./home']);
   }
-
+  ngOnInit():void{
+    this.showCart$=this.drawerService.showCart$;
+    this.cartDrawerData$=this.drawerService.cartDrawerData$;
+  }
 }

@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   mode: 'Dev',
-  latticeUrl:"https://www.licious.in/",
+  liciousUrl:"https://www.licious.in/",
   fromLocation: 'licious',
 };
 

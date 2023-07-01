@@ -1,1 +1,304 @@
-<p>cart works!</p>
+<div class="modalBackDropDiv orderSummary"></div>
+<div class="modalWrapperContainer modalWrapperContainerClose">
+    <div class="modalStyledModal">
+        <div class="modalHeaderContainer">
+            <div class="modalCloseButton"><img class="closeCart" src="https://licious.in/image/rebranding/png/Cross@2x.png"></div>
+        </div>
+        <div class="modalBodyContent">
+            <div class="Loader_loaderContainer___z_zR">
+                <div class="Loader_loaderOff__kBChb"><span><img src="https://licious.in/image/rebranding/png/licious_smile.png"
+                            alt="Licious"></span></div>
+                <div class="Loader_showChildren__P39Nk">
+                    <div class="Loader_loaderContainer___z_zR">
+                        <div class="Loader_loaderOff__kBChb"><span><img src="https://licious.in/image/rebranding/png/licious_smile.png"
+                                    alt="Licious"></span></div>
+                        <div class="Loader_showChildren__P39Nk">
+                            <div class="cartContainerModalOverlay"></div>
+                            <div class="cartContainerCartHeaderWebsite">
+                                <div class="cartContainerCartHeaderText">Order Summary</div>
+                            </div>
+                            <div *ngIf="orderSummary" class="CartContainer_container__ScjFI CartContainer_container_website__rV_ht">
+                                <div class="OrderMessages_success_block_message__vekUi">{{orderSummary.deliveryChargeMessage}}</div>
+                                <div class="OrderMessages_success_message__trKwY">Congratulations! You've saved ₹{{orderSummary.savedMoney}}
+                                </div>
+                                <div class="CartContainer_cart_details__NBk5C">
+                                    <div *ngIf="orderSummary.cartItems" class="CartContainer_order_list__gclv_">
+                                        <div *ngFor="let item of orderSummary.cartItems;let n = index;" class="CartOrderItem_productContianer__bcH1G">
+                                            <div class="CartOrderItem_product__yDkzT">
+                                                <div class="CartOrderItem_item_detail__lLsVW">
+                                                    <div class="CartOrderItem_serial_no__TEvkg">{{n+1}}</div>
+                                                    <div class="CartOrderItem_product_name__F2oXw">{{item.name}}</div><span (click)="deleteItem(item)"
+                                                        class="CartOrderItem_icon_remove__X9LNz"><img
+                                                            src="https://licious.in/image/rebranding/png/black-cross-icon.png"></span>
+                                                </div>
+                                                <div class="CartOrderItem_item_quantity_info__8MVEN">
+                                                    <div class="CartOrderItem_item_price__llT5I"><span
+                                                            class="CartOrderItem_item_quantity__8PTvx" *ngIf="item.weight">{{item.weight}}gms</span>
+                                                            <span
+                                                            class="CartOrderItem_item_quantity__8PTvx" *ngIf="item.pieces">{{item.pieces}}
+                                                            Pieces</span>
+                                                            <span
+                                                            class="CartOrderItem_item_discounted_price__6iR80" *ngIf="item.price && item.discountPrice">₹
+                                                            {{item.discountPrice}}</span>
+                                                            <span
+                                                            class="CartOrderItem_item_discounted_price__6iR80" *ngIf="item.price && !item.discountPrice">₹
+                                                            {{item.price}}</span>
+                                                            <span
+                                                            class="CartOrderItem_item_base_price__MmItl" *ngIf="item.price && item.discountPrice">₹ {{item.price}}</span>
+                                                    </div>
+                                                    <div class="CartOrderItem_item_count__FZZlz"><span
+                                                            class="CartOrderItem_icon_minus___qRGI" (click)="removeItem(item)"></span><span
+                                                            class="CartOrderItem_number_of_item__bhqHk" *ngIf="item.quantity">{{item.quantity}}</span><span
+                                                            class="CartOrderItem_icon_plus__ciRqu" (click)="addItem(item)"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Loader_loaderContainer___z_zR">
+                                        <div class="Loader_loaderOff__kBChb"><span><img
+                                                    src="https://licious.in/image/rebranding/png/licious_smile.png" alt="Licious"></span>
+                                        </div>
+                                        <div class="Loader_showChildren__P39Nk">
+                                            <div class="LoyaltyBanner_cart_loyalty_banner__awdI9">
+                                                <div class="LoyaltyBanner_ll_cart_msg__OFhqF">Stop paying delivery
+                                                    charges. Join Meatopia today!</div>
+                                                <div class="LoyaltyBanner_loyalty_non_member_banner__FyzZ8">
+                                                    <div class="LoyaltyBanner_loyalty_non_member_banner_top__2lyfH"><img
+                                                            src="https://licious.in/image/rebranding/svg/licious-meatopia-logo.svg"
+                                                            class="LoyaltyBanner_loyalty_banner_licious_non_member_logo__bwT6v">
+                                                        <div
+                                                            class="LoyaltyBanner_loyalty_non_member_banner_redirection_text__rlwkl">
+                                                            <span>JOIN NOW</span><img
+                                                                src="https://licious.in/image/rebranding/svg/red-dropdown.svg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="CrossSellPanel_new_offers_line___Mrek"><span
+                                            class="CrossSellPanel_line_desc__urH0R" id="crossSellTitle"><b>You May Want
+                                                To Try</b></span></div>
+                                    <div class="CrossSellPanel_cross_sell_list__6zy5W">
+                                        <div class="CrossSellCard_card_container__eJGju" id="cross_sell_pr_eq3lbgf566f">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">5% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/ddc47d2b-f0a3-d0e3-e968-d76a52451982/original/PDP_24._Chicken_Keema_-_250_gms_(Mini_Pack).jpg">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span>Chicken Mince/Keema -
+                                                        250 gms (Mini Pack)</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 159</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 151</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">400gms</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="CrossSellCard_card_container__eJGju" id="cross_sell_pr_4q4jya5rtvg">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">5% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/c0f6f978-0dd8-d825-7386-0d1f593153c0/original/Shawarma-Chicken.png">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span>Chunky Shawarma
+                                                        Chicken Spread</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 219</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 208</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">1 Pieces</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="CrossSellCard_card_container__eJGju"
+                                            id="cross_sell_pr_590f2bc508b4a">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">11.76% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/9b41ff57-e7b0-476d-7f50-29fc2d27fb41/original/PDP_1._Classic_Eggs_-_Pack_of_6.jpg">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span>Classic (Farm Fresh)
+                                                        Eggs - Pack of 6</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 85</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 75</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">6 Pieces</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="CrossSellCard_card_container__eJGju" id="cross_sell_pr_4q4jya5rq6v">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">10% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/f574b383-2080-bb9d-57b5-58925e9d1c2c/original/Chunky-Continental-Chicken.png">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span>Chunky Continental
+                                                        Chicken Spread</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 219</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 197</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">1 Pieces</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="CrossSellCard_card_container__eJGju" id="cross_sell_pr_ncplaqh5mkw">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">5% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/90ba85ab-75e9-d199-1080-cb7a5bf02377/original/masala_tile-36.jpg">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span>Classic Chicken
+                                                        Masala</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 55</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 52</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">1 Unit</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="CrossSellCard_card_container__eJGju" id="cross_sell_pr_o2hlaqh6jv9">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">5% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/e988fcf6-cfab-b542-eb3e-eb1fc2bb0bc1/original/masala_tile-40.jpg">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span>Classic Meat
+                                                        Masala</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 55</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 52</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">1 Unit</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="CrossSellCard_card_container__eJGju" id="cross_sell_pr_3l6l89zrg6n">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">2% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/2a93c46a-3eac-ce79-28df-4241989d6d88/original/uncooked_(5).jpg">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span> Plant Based Chick~n
+                                                        Seekh Kebab - Single Serve</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 105</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 103</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">1 Pieces</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="CrossSellCard_card_container__eJGju" id="cross_sell_pr_kjdlaqh7g54">
+                                            <div class="CrossSellCard_item_image__XhXaZ"><span
+                                                    class="CrossSellCard_offer_discount___vKjc">5% Off</span><img
+                                                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/1ab4c0f5-2e6b-86c1-078f-41837b6ede23/original/masala_tile-38.jpg">
+                                            </div>
+                                            <div class="CrossSellCard_item_desc__zLoqQ">
+                                                <div class="CrossSellCard_item_name__wwXlS"><span>Chatpata Fish Fry
+                                                        Masala</span></div>
+                                                <div
+                                                    class="CrossSellCard_add_item__qlacg you-may-want-to-try-add-to-cart add-to-cart">
+                                                </div>
+                                            </div>
+                                            <div class="CrossSellCard_item_details__cgvmh">
+                                                <div class="CrossSellCard_item_amount__vxNuk"><span
+                                                        class="CrossSellCard_base_price__DkmXM">₹ 55</span><span
+                                                        class="CrossSellCard_discounted_price__yaNK5">₹ 52</span></div>
+                                                <div class="CrossSellCard_quantity__BM4Rh"><span
+                                                        class="CrossSellCard_item_quantity__4clAx">1 Unit</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="CartBill_bill_details__IMtCW"><span
+                                            class="CartBill_bill_heading__IrR1R">Bill Details</span>
+                                        <div>
+                                            <div class="CartBill_bill_items__9GMVD">
+                                                <span>Subtotal</span><span>{{orderSummary.totalCartItemPriceWithoutDeliveryCharge}}</span></div>
+                                        </div>
+                                        <div>
+                                            <div class="CartBill_bill_items__9GMVD"><span>Delivery Charge<br><span
+                                                        class="CartBill_delivery_message__uwjbV">{{orderSummary.deliveryChargeMessage}}</span></span><span>{{orderSummary.deliveryCharge}}</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="CartBill_bill_total___NSiY"><span
+                                                    class="CartBill_key___aiRD">Total</span><span
+                                                    class="CartBill_value__qj1yl">₹ {{orderSummary.finalTotalPrice}}</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="CartFooter_bottom_wrapper__rqxZ7">
+                                        <div class="PaymentFooter_reorder_bottom_bar__LlGv5">
+                                            <div class="PaymentFooter_reorder_slot_summary_wrapper__lQIvB">
+                                                <div class="PaymentFooter_reorder_amount__d2_6d"
+                                                    style="margin-top: 10px;">Total : <span>₹ {{orderSummary.finalTotalPrice}} <img
+                                                            src="https://licious.in/image/rebranding/png/info-icon.png"></span></div>
+                                                <button class="PaymentFooter_proceed_payment_button__b_tNy" (click)="onProceedToCheckout()">Proceed to
+                                                    Checkout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ComboModal_modal_wrapper__0hYzI"><button
+                                            class="ComboModal_buttonContainer__uiNII">
+                                            <div><span
+                                                    style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span
+                                                        style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img
+                                                            alt="" aria-hidden="true"
+                                                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2731%27%20height=%2731%27/%3e"
+                                                            style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img
+                                                        alt="Remove combo product"
+                                                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                        decoding="async" data-nimg="intrinsic"
+                                                        style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"><noscript></noscript></span>
+                                            </div>
+                                        </button>
+                                        <div class="ComboModal_modal_container__KA5dh">
+                                            <div class="ComboModal_modal_header__KBhVn">Remove combo product ?</div>
+                                            <div class="ComboModal_modal_text__8XD_r">Removing a combo product or
+                                                changing any quantity will result in cancellation of combo offer. Prices
+                                                can change accordingly.</div>
+                                            <div class="ComboModal_btn_row__c301X"><button
+                                                    class="ComboModal_btn_no__js_bf">Don't remove</button><button
+                                                    class="ComboModal_btn_yes__FclT9">Remove</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

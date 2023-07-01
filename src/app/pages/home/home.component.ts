@@ -21,30 +21,36 @@ export class HomeComponent implements OnInit {
   constructor(private httpService: HttpService) { }
   ngOnInit(): void {
     this.httpService.carItem$.subscribe(data => {
+      console.log('carItem$$$$$$');
+      console.log(data);
       this.selectedCartItems = {};
       if (data) {
         data.forEach((d: any) => {
+          // if (!this.selectedCartItems[d.type]) {
+          //   this.selectedCartItems[d.type] = {}
+          //   if (!this.selectedCartItems[d.type][d.name]) {
+          //     this.selectedCartItems[d.type][d.name] = 1
+          //   }
+          // } else {
+          //   if (!this.selectedCartItems[d.type][d.name]) {
+          //     this.selectedCartItems[d.type][d.name] = 1
+          //   } else {
+          //     this.selectedCartItems[d.type][d.name] ++
+          //   }
+          // }
           if (!this.selectedCartItems[d.type]) {
             this.selectedCartItems[d.type] = {}
             if (!this.selectedCartItems[d.type][d.name]) {
-              this.selectedCartItems[d.type][d.name] = 1
+              this.selectedCartItems[d.type][d.name] = d.quantity;
             }
           } else {
             if (!this.selectedCartItems[d.type][d.name]) {
-              this.selectedCartItems[d.type][d.name] = 1
+              this.selectedCartItems[d.type][d.name] = d.quantity;
             } else {
-              this.selectedCartItems[d.type][d.name] ++
+              this.selectedCartItems[d.type][d.name] = d.quantity;
             }
           }
-          // if (!this.selectedCartItems[d.name]) {
-          //   this.selectedCartItems[d.name]=1;
-          // } else {
-          // if (this.selectedCartItems.hasOwnProperty( d.name )) {
-          //   this.selectedCartItems[d.name]++;
-          // } else {
-          // this.selectedCartItems[d.name]=1;
-          // }
-          // }
+            this.selectedCartItems[d.type][d.name] = d.quantity;
         })
         console.log(this.selectedCartItems);
       }
@@ -52,13 +58,15 @@ export class HomeComponent implements OnInit {
   }
   addItemToCart(item: any) {
     // console.log(addItemToCart)
-    this.httpService.addItemAndUpdateData(item);
+    // this.httpService.addItemAndUpdateData(item);
+    this.httpService.addItemToCart(item);
     console.log('addItemToCart')
     console.log(item);
     // this.cartItems.push(item);
   }
   removeItemFromCart(item:any){
-    this.httpService.removeItemUpdateData(item);
+    // this.httpService.removeItemUpdateData(item);
+    this.httpService.removeItemFromCart(item);
   }
 
 }
