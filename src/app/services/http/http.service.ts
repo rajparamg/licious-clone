@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -7,23 +8,14 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class HttpService {
 
   cartItems: Array<any>=[];
-  public carItemSub = new BehaviorSubject<any>(this.cartItems);
-  public carItem$ = this.carItemSub.asObservable();
-  constructor() { }
-  // addItemAndUpdateData(item:any){
-  //   this.cartItems.push(item);
-  //   this.carItemSub.next(this.cartItems);
-  // }
-  // removeItemUpdateData(item:any){
-  //   console.log('removeItemUpdateData');
-  //   console.log(this.cartItems);
-  //   console.log(item);
-  //   let itemIndex = this.cartItems.findIndex((ct:any)=> ct.type === item.type && ct.id === item.id )
-  //   this.cartItems.splice(itemIndex,1);
-  //   // this.cartItems=this.cartItems.filter((ct:any)=> ct.meatType !== item.meatType && ct.id !== item.id );
-  //   this.carItemSub.next(this.cartItems);
-  // }
-
+  carItemSub = new BehaviorSubject<any>(this.cartItems);
+  carItem$ = this.carItemSub.asObservable();
+  liciousUrl="https://www.licious.in/api/search?query="
+  constructor(private http:HttpClient) { }
+  headers: any = {
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+  };
 addItemToCart(item:any) {
   var existingItem:any = this.cartItems.find((cartItem:any) => cartItem.id === item.id);
   if (existingItem) {
@@ -52,4 +44,14 @@ clearCart() {
   this.carItemSub.next(this.cartItems);
 
 }
+
+searchProduct(searchKey:string):Observable<any>{
+  let api="", queryText=`${searchKey}&page=1`;
+  api=`${this.liciousUrl}${queryText}`;
+  let httpOptions={
+    headers:new HttpHeaders(this.headers)
+  }
+  return this.http.get(api,httpOptions);
+}
+
 }

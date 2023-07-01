@@ -13,6 +13,9 @@ import { FooterPopularSearchComponent } from './components/footer/footer-popular
 import { PurchaseItemComponent } from './components/purchase-item/purchase-item.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { LocationModalComponent } from './components/modals/location-modal/location-modal.component';
+import { LocationSearchComponent } from './components/modals/location-search/location-search.component';
+import { ProductSearchComponent } from './pages/product-search/product-search.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,14 @@ import { LocationModalComponent } from './components/modals/location-modal/locat
     FooterPopularSearchComponent,
     PurchaseItemComponent,
     HeaderComponent,
-    LocationModalComponent
+    LocationModalComponent,
+    LocationSearchComponent,
+    ProductSearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

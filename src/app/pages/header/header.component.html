@@ -1,4 +1,8 @@
 <app-location-modal></app-location-modal>
+
+<!-- location search modal -->
+<app-location-search *ngIf="locationSearch$ | async"></app-location-search>
+
 <!-- Header/top navigation start-->
 <section class="navigationContainer">
     <header class="top_navigation_section" data-page="">
@@ -14,9 +18,11 @@
                     </div>
                     <div class="text_2 location_detecting locality_name">{{locationDetectionMessage}}</div>
                 </div>
-            </div><a class="searchbar_container" href="https://www.licious.in/search"><input class="searchbar"
+            </div>
+            <a *ngIf="!isSearch" class="searchbar_container" routerLink="/search" (click)="showSearchBox()"><input class="searchbar"
                     autocomplete="off"><label class="title_5 search_label">Search for any delicious
                     product</label></a>
+            <div *ngIf="isSearch" class="RealSearchBar_searchbar_container__Q0W4g"><input autofocus (input)="onProductSearch($event)" class="RealSearchBar_searchbar__zap4G" autocomplete="off" type="text" placeholder="Search for any delicious product"></div>
             <div class="thirdSection">
                 <div class="category_container">
                     <div class="categories_button"><img

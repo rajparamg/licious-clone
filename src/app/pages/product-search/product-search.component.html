@@ -1,0 +1,36 @@
+<div class="searchCategory">
+<div class="WidgetContainer_widget_container__L_SK_" data-layouttype="fullwidth">
+    <ng-container *ngIf="categories  && categories.length !==0">
+        <header>
+            <h1 class="title_2">Shop by categories</h1>
+            <h2 class="text_1">Freshest meats and much more!</h2>
+        </header>
+        <article data-testid="category_grid" id="category_grid" class="CategoriesGrid_grid_container__soeRq"><a
+                data-testid="category_grid0" class="CategoriesGrid_cat_item__xccPQ" href="/delicious-deals">
+                <div data-testid="category_grid0-img-container" class="CategoriesGrid_img_container__OlEJk"><img
+                        data-testid="category_grid0-img"
+                        src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/111d6147-b116-f51c-bd9d-dddfd923ba97/original/Todays_Deal_1.png"
+                        alt="Today's Deals"></div>
+                <div data-testid="category_grid0-mob_subtitle"
+                    class="CategoriesGrid_category_name_mobile__aauoP title_7">
+                    Today's Deals</div>
+                <div data-testid="category_grid0-web_subtitle"
+                    class="CategoriesGrid_category_name_desktop__NeUck title_5">
+                    Today's Deals</div>
+            </a>
+            <a *ngFor="let d of categories; let i=index;" class="CategoriesGrid_cat_item__xccPQ" href="/chicken">
+                <div data-testid="category_grid1-img-container" class="CategoriesGrid_img_container__OlEJk"><img
+                        data-testid="category_grid1-img" [src]="d.avatar" [alt]="d.name"></div>
+                <div data-testid="category_grid1-mob_subtitle"
+                    class="CategoriesGrid_category_name_mobile__aauoP title_7">
+                    {{d.name}}</div>
+                <div data-testid="category_grid1-web_subtitle"
+                    class="CategoriesGrid_category_name_desktop__NeUck title_5">
+                    {{d.name}}</div>
+            </a>
+
+
+        </article>
+    </ng-container>
+</div>
+</div>

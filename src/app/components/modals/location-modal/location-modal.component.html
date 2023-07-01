@@ -2,7 +2,7 @@
     <div class="modalDialogwrapper" #locationModal>
         <div class="modalCloseDialogSmall" ><img src="https://licious.in/image/rebranding/png/Cross@2x.png" height="32"
                 width="32" class="closeImg"></div>
-        <div class="modalDialogContainerSmall" (click)="onModalClick()">
+        <div class="modalDialogContainerSmall" (click)="onModalClick($event)">
             <div class="locationHeaderPopup">
                 <div class="locationHeaderHeading">Looking at changing your location?</div>
                 <div class="locationHeaderMessage">This might affect the availability of items in your cart.
